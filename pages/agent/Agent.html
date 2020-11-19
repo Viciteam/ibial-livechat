@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./Agent.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <!-- Nav tabs -->
+      <div class="row">
+        <div class="col-9">
+          <ul class="nav nav--underline primary--text px-3" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link py-3 active font-weight-semi-bold text-secondary"
+                id="home-tab"
+                data-toggle="tab"
+                href="#home"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                >Agents<span>(3)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link py-3 font-weight-semi-bold text-secondary"
+                id="profile-tab"
+                data-toggle="tab"
+                href="#profile"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+                >Teams<span>(2)</span></a
+              >
+            </li>
+
+            <div class="dropdown ml-auto my-auto">
+              <button
+                class="btn btn-outline-primary dropdown-none dropdown-toggle btn-md border-rounded px-5 font-weight-semi-bold"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                append-icon=""
+                type="submit"
+              >
+                New
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </ul>
+          <div class="dropdown-divider m-0 border-default"></div>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div
+              class="tab-pane active py-2"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <input
+                type="text"
+                class="form-control py-2 mb-2 border-none"
+                placeholder="Search"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+
+              <div class="dropdown-divider m-0 border-default"></div>
+
+              <!-- Table -->
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th
+                      scope="col"
+                      class="text-secondary font-weight-semi-bold border-none"
+                    >
+                      Status
+                    </th>
+                    <th
+                      scope="col"
+                      class="text-secondary font-weight-semi-bold border-none"
+                    >
+                      Name
+                    </th>
+                    <th
+                      scope="col"
+                      class="text-secondary font-weight-semi-bold border-none"
+                    >
+                      Role
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="border-default">
+                      <div
+                        class="avatar avatar-normal bg-secondary position-relative"
+                      >
+                        <span
+                          class="badge-status badge-status-br badge-status-border-white badge-status-bordered badge-status-success"
+                        ></span>
+                      </div>
+                    </th>
+                    <td class="border-default">
+                      <div>
+                        <span> Victor </span>
+                        <br />
+                        <span class="gray--text"> victor@company.com </span>
+                      </div>
+                    </td>
+                    <td class="border-default align-middle">
+                      <span
+                        class="badge badge-pill secondary text-white text-uppercase py-2 px-3"
+                        >Owner</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row" class="align-middle border-default">
+                      <div class="text-muted font-weight-semi-bold">
+                        Pending
+                      </div>
+                    </th>
+                    <td class="border-default">
+                      <div>
+                        <span> Pending Agent </span>
+                        <br />
+                        <span class="gray--text">
+                          pendingagent@company.com
+                        </span>
+                      </div>
+                    </td>
+                    <td class="border-default align-middle">
+                      <span
+                        class="badge badge-pill gray text-white text-muted text-uppercase py-2 px-3"
+                        >Agent</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="tab-pane"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              Teams
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="d-flex align-content-center py-3">
+            <div class="mr-auto font-weight-bold my-auto">Agent Details</div>
+            <div>
+              <button type="button" class="btn bg-white">
+                <i class="fas fa-pen primary--text"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="dropdown-divider m-0 border-default"></div>
+
+          <li class="d-flex align-items-center mt-4">
+            <div class="avatar avatar-large bg-secondary position-relative">
+              <span
+                class="badge-status-lg badge-status-br badge-status-border-white badge-status-bordered badge-status-success"
+              >
+              </span>
+            </div>
+            <span class="ml-2">
+              <span class="font-weight-semi-bold px-1">Angela</span>
+              <span
+                class="badge badge-pill gray text-white text-muted text-uppercase py-2 px-3"
+                >Agent</span
+              >
+              <br />
+              <span class="font-weight-semi-bold px-1 gray--text">
+                Angela@company.com
+              </span>
+              <br />
+              <span class="font-weight-normal px-1 gray--text">
+                Support Agent
+              </span>
+            </span>
+          </li>
+
+          <div class="ml-5 pl-4 mt-3">
+            <span class="font-weight-semi-bold">
+              Status:
+              <span class="font-weight-bold">Offline</span>
+            </span>
+          </div>
+
+          <div id="accordion">
+            <div class="card border-none">
+              <div
+                class="card-header collapse-flat cursor-pointer"
+                id="headingOne"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                <div class="mr-auto font-weight-bold my-auto">Teams</div>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordion"
+              >
+                <li class="d-flex align-items-center mt-4">
+                  <div
+                    class="avatar avatar-normal bg-secondary position-relative"
+                  >
+                    <span class="my-auto mx-auto"> G </span>
+                  </div>
+
+                  <span class="ml-2 font-weight-semi-bold px-1">Angela</span>
+                </li>
+
+                <li class="d-flex align-items-center mt-4">
+                  <div
+                    class="avatar avatar-normal bg-secondary position-relative"
+                  >
+                    <span class="my-auto mx-auto"> T </span>
+                  </div>
+
+                  <span class="ml-2 font-weight-semi-bold px-1">Angela</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

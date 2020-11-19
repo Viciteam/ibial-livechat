@@ -1,0 +1,98 @@
+/* Color Theme */
+.primary {
+  background-color: #4db7a1;
+}
+.secondary {
+  background-color: #637fdd;
+}
+.gray {
+  background-color: #dfdfe1;
+}
+.primary--text {
+  color: #4db7a1;
+}
+.secondary--text {
+  color: #637fdd;
+}
+.gray--text {
+  color: #bdbdbd;
+}
+/* End Color Theme */
+
+/* Custom CSS */
+.nav--underline a.active {
+  border-bottom: 2.5px solid #55c9ad;
+  color: #4db7a1 !important;
+}
+.border-none {
+  border: none !important;
+}
+.border-rounded {
+  border-radius: 100px !important;
+}
+.border-default {
+  border-color: #ebecef;
+}
+.border-height-default {
+  border-width: 1px;
+}
+.font-weight-semi-bold {
+  font-weight: 600;
+}
+.avatar {
+  border-radius: 100px;
+}
+.avatar-normal {
+  width: 44px;
+  height: 44px;
+}
+.avatar-large {
+  width: 60px;
+  height: 60px;
+}
+.display-block {
+  display: block;
+}
+.position-relative {
+  position: relative;
+}
+.badge-status {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border-radius: 20px;
+}
+.badge-status-lg {
+  width: 16.5px;
+  height: 16.5px;
+  position: absolute;
+  border-radius: 20px;
+}
+.badge-status-bordered {
+  border: 1px solid;
+}
+.badge-status-border-white {
+  border-color: white;
+}
+.badge-status-br {
+  bottom: 0;
+  right: 0;
+}
+.badge-status-success {
+  background-color: #4db7a1;
+}
+.dropdown-none.dropdown-toggle::after,
+.dropdown-none.dropdown-toggle::before {
+  display: none;
+}
+.btn-text {
+  background: none;
+}
+.collapse-flat {
+  /* background: none; */
+  border: none;
+  box-shadow: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
