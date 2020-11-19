@@ -230,44 +230,136 @@
             </span>
           </div>
 
-          <div id="accordion">
-            <div class="card border-none">
+          <div id="accordionteam">
+            <div class="card border-none mt-4">
               <div
                 class="card-header collapse-flat cursor-pointer"
-                id="headingOne"
+                id="headingOneteam"
                 data-toggle="collapse"
-                data-target="#collapseOne"
+                data-target="#collapseOneteam"
                 aria-expanded="false"
-                aria-controls="collapseOne"
+                aria-controls="collapseOneteam"
               >
                 <div class="mr-auto font-weight-bold my-auto">Teams</div>
               </div>
 
               <div
-                id="collapseOne"
-                class="collapse show"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
+                id="collapseOneteam"
+                class="collapse show ml-3"
+                aria-labelledby="headingOneteam"
+                data-parent="#accordionteam"
               >
                 <li class="d-flex align-items-center mt-4">
                   <div
-                    class="avatar avatar-normal bg-secondary position-relative"
+                    class="avatar avatar-text avatar-normal orange position-relative"
                   >
-                    <span class="my-auto mx-auto"> G </span>
+                    <h5
+                      class="my-auto mx-auto font-weight-semi-bold text-white"
+                    >
+                      G
+                    </h5>
                   </div>
 
-                  <span class="ml-2 font-weight-semi-bold px-1">Angela</span>
+                  <span class="ml-2 font-weight-semi-bold px-1">General</span>
                 </li>
 
-                <li class="d-flex align-items-center mt-4">
+                <li class="d-flex align-items-center mt-2">
                   <div
-                    class="avatar avatar-normal bg-secondary position-relative"
+                    class="avatar avatar-text avatar-normal info position-relative"
                   >
-                    <span class="my-auto mx-auto"> T </span>
+                    <h5
+                      class="my-auto mx-auto font-weight-semi-bold text-white"
+                    >
+                      T
+                    </h5>
                   </div>
 
-                  <span class="ml-2 font-weight-semi-bold px-1">Angela</span>
+                  <span class="ml-2 font-weight-semi-bold px-1"
+                    >Technical Support</span
+                  >
                 </li>
+              </div>
+            </div>
+          </div>
+          <div id="accordionChat">
+            <div class="card border-none mt-4">
+              <div
+                class="card-header collapse-flat cursor-pointer"
+                id="headingOne"
+                data-toggle="collapse"
+                data-target="#collapseOneChat"
+                aria-expanded="false"
+                aria-controls="collapseOneChat"
+              >
+                <div class="mr-auto font-weight-bold my-auto">
+                  Chat Information
+                </div>
+              </div>
+
+              <div
+                id="collapseOneChat"
+                class="collapse show ml-3"
+                aria-labelledby="headingOneChat"
+                data-parent="#accordionChat"
+              >
+                <li class="d-flex align-items-center mt-4">
+                  <i class="fas fa-comment-alt gray--text text-v"></i>
+
+                  <span class="ml-2 font-weight-semi-bold px-1"
+                    >Total Chats</span
+                  >
+                </li>
+
+                <li class="d-flex align-items-center mt-2">
+                  <i class="fas fa-thumbs-up gray--text text-v"></i>
+
+                  <span class="ml-2 font-weight-semi-bold px-1"
+                    >Average Rating</span
+                  >
+                </li>
+              </div>
+            </div>
+          </div>
+          <div id="accordionActions">
+            <div class="card border-none mt-4">
+              <div
+                class="card-header collapse-flat cursor-pointer"
+                id="headingOne"
+                data-toggle="collapse"
+                data-target="#collapseOneActions"
+                aria-expanded="false"
+                aria-controls="collapseOneActions"
+              >
+                <div class="mr-auto font-weight-bold my-auto">Actions</div>
+              </div>
+
+              <div
+                id="collapseOneActions"
+                class="collapse show ml-3"
+                aria-labelledby="headingOneActions"
+                data-parent="#accordionActions"
+              >
+                <li class="d-flex align-items-center mt-4">
+                  <div class="custom-control custom-switch">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="customSwitch1"
+                    />
+                    <label class="custom-control-label" for="customSwitch1">
+                      <span class="ml-2 font-weight-semi-bold px-1">
+                        Enable admin privileges
+                      </span>
+                    </label>
+                  </div>
+                </li>
+
+                <div class="gray--text mt-2 px-2">
+                  This gives the agent full access e.g. viewing stats, managing
+                  agents, and editing chat settings.
+                </div>
+
+                <button type="button" class="btn btn-text btn-error my-3">Delete Agent</button>
               </div>
             </div>
           </div>

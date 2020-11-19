@@ -8,6 +8,12 @@
 .gray {
   background-color: #dfdfe1;
 }
+.orange {
+  background-color: #f2994a;
+}
+.info {
+  background-color: #2d9cdb;
+}
 .primary--text {
   color: #4db7a1;
 }
@@ -16,6 +22,9 @@
 }
 .gray--text {
   color: #bdbdbd;
+}
+.orange--text {
+  color: #f2994a;
 }
 /* End Color Theme */
 
@@ -41,6 +50,12 @@
 }
 .avatar {
   border-radius: 100px;
+}
+.avatar-text {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .avatar-normal {
   width: 44px;
@@ -96,3 +111,24 @@
 .cursor-pointer {
   cursor: pointer;
 }
+
+/* Font Size */
+.text-i {
+  font-size: 10px;
+}
+.text-ii {
+  font-size: 12px;
+}
+.text-iii {
+  font-size: 14px;
+}
+.text-iv {
+  font-size: 16px;
+}
+.text-v {
+  font-size: 18px;
+}
+.text-vi {
+  font-size: 20px;
+}
+/* End Font Size */
