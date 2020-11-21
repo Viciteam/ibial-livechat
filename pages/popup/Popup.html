@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./Popup.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Popup.js"></script>
+  </head>
+
+  <body>
+      <div class="popup-interface">
+        <button
+            class="btn primary dropdown-none btn-md popup-interface-btn px-5 font-weight-semi-bold"
+            type="button"
+            id="popup-interface-btn"
+        >
+            <img src="img/chat_bubble.png" width="30"/>
+            <span class="white--text pl-2">Chat with us! We're online.</span>
+      </button>
+      </div>
+
+      <div class="chat-widget-interface" id="chat-widget-interface">
+        <div class="interface--header row primary">
+            <div class="col-2">
+                <img src="img/Avatar.png" class="pt-2" width="30"/>
+            </div>
+            <div class="col-6">
+                <span class="white--text agent-name row">Agent Name</span>
+                <span class="white--text text-smaller row">Job Title</span>
+            </div>
+            <div class="col-4 pr-0 text--right">
+                <button type="button" class="btn primary white--text">
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn primary white--text" id="hide-btn">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <!---------  -->
+        <div class="chat-container row">
+            <div class="row user-details">
+                <div class="col-2 user-avatar">
+                    <img src="img/Avatar.png" class="pt-2" width="30"/>
+                </div>
+                <div class="col-10 user-message text-smaller py-2 mt-2">
+                    Hello! How can I help you today?
+                </div>
+            </div>
+            <div class="row agent-details">
+                <div class="col-5"></div>
+                <div class="col-7 agent-message primary text-smaller white--text py-2 mt-3">
+                    Hello I’m looking for a different product
+                </div>
+            </div>
+        </div>
+        <div class="chat-container--empty"></div>
+        <!---------  -->
+        <div class="row input-fields mt-3">
+            <div class="col-1">
+                <img src="img/Icon.png" class="pt-3"/> 
+            </div>
+            <div class="col-8 pl-1 mt-1">
+                <input type="text" placeholder="Type your message..." name="message" class="text-field text-smaller" />
+            </div>
+            <div class="col-1 pl-1 icons">
+                <img src="img/Shape.png" class="pt-3" width="15"/> 
+            </div>
+            <div class="col-1 pl-1 icons">
+                <img src="img/mic.png" class="pt-3" width="15"/> 
+            </div>
+            <div class="col-1 pl-1 icons">
+                <img src="img/Record Screen.png" class="pt-3" width="15"/> 
+            </div>
+        </div>
+        <div class="popup-interface-footer text-smaller">
+            <span class="footer-text">Powered by</span>&nbsp;
+            <span class="footer-title">IBIAL WP CHAT</span>
+        </div>
+      </div>
+  </body>
+</html>
