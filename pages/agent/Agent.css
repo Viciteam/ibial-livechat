@@ -157,3 +157,58 @@
   text-decoration: none;
   background-color: #4db7a1 !important;
 }
+.sidebar-menu {
+  position: absolute;
+  width: 80px;
+  height: 770px;
+  left: 0px;
+  top: 0px;
+  background: #F8F8F8;
+  box-shadow: inset -10px 0px 20px rgba(235, 236, 239, 0.5), inset -1px 0px 0px #EBECEF;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+.sidebar-menu a {
+  padding: 6px 8px 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  text-align: center;
+}
+.sidebar-menu a:hover {
+  color: #4db7a1;
+}
+.ibiallogo {
+  padding: 6px 8px 40px 16px !important;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?lrl5fw');
+  src:  url('fonts/icomoon.eot?lrl5fw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?lrl5fw') format('truetype'),
+    url('fonts/icomoon.woff?lrl5fw') format('woff'),
+    url('fonts/icomoon.svg?lrl5fw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pulse:before {
+  content: "\e900";
+}
