@@ -56,9 +56,14 @@
                 <span class="white--text text-smaller row">Job Title</span>
             </div>
             <div class="col-4 pr-0 text--right">
-                <button type="button" class="btn primary white--text">
+                <button id="toggleChatOptions" type="button" class="btn dropbtn primary white--text">
                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                 </button>
+                <div id="chatOptions" class="chat-dropdown-options">
+                    <a href="#" class="text-smaller" data-toggle="modal" data-target="#modalSendTranscript">Send transcript to email</a>
+                    <a href="#" id="toggleMute" class="text-smaller">Mute</a>
+                    <a href="#" class="text-smaller"  data-toggle="modal" data-target="#confirmClose">Close this chat session</a>
+                </div>
                 <button type="button" class="btn primary white--text" id="hide-btn">
                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                 </button>
@@ -105,5 +110,44 @@
             <span class="footer-title">IBIAL WP CHAT</span>
         </div>
       </div>
+
+      <!-- Modal for Send transcript to email-->
+    <div class="modal fade" id="modalSendTranscript" role="dialog">
+        <div class="modal-dialog modal-send-transcript">
+        
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title mx-auto">Send the chat transcript to:</h5>
+            </div>
+            <div class="modal-body mx-auto">
+                <input type="text" class="py-2 px-3 send-chat-input" placeholder="email@sample.com"/>
+            </div>
+            <div class="modal-footer mx-auto">
+                <button type="button" class="btn btn-default modal-btn" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn primary white--text modal-btn" data-dismiss="modal">Send</button>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <!-- Confirm Modal for Closing the chat -->
+    <div class="modal fade" id="confirmClose" role="dialog">
+        <div class="modal-dialog modal-send-transcript">
+        
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+            <h6 class="modal-title mx-auto text--center">Are you sure you want to close this chat session?</h6>
+            </div>
+            <div class="modal-footer mx-auto">
+                <button type="button" class="btn btn-default modal-btn" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger white--text modal-btn" data-dismiss="modal">Close chat</button>
+            </div>
+        </div>
+        
+        </div>
+    </div>
   </body>
 </html>
