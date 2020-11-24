@@ -45,6 +45,10 @@
     text-align: center;
   }
 
+  .grey--text {
+      color: #596366;
+  }
+
 /** Custom CSS **/
 body {
     font-family: 'Poppins', sans-serif;
@@ -179,13 +183,13 @@ body {
 
 .star-rating {
     width: 30px;
-    padding: 3px 5px;
+    padding: 5px;
     border-radius: 20px;
     margin-bottom: 10px;
 }
 .rating-btn {
     font-size: 18px;
-    padding: 3px 7px;
+    padding: 2px 7px;
     border-radius: 25px;
 }
 .rating-feedback {
@@ -195,4 +199,11 @@ body {
 }
 .submit-rating-btn {
     width: 240px;
+}
+.bold {
+    font-weight: bold;
+}
+.comment-rating {
+    font-style: italic;
+    font-weight: bold;
 }

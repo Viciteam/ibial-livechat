@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(e) {
 
+	let rating = '';
 	/**
 	 * Toggle Popup Widget
 	 */
@@ -56,30 +57,48 @@ document.addEventListener('DOMContentLoaded', function(e) {
 	});
 
 	/**
-	 * show Rating Modal
-	 */
-	const ratingModal = document.getElementById('showRatingModal');
-	ratingModal.addEventListener('click', () => {
-		$("#ratingModal").modal();
-	});
-
-	/**
 	 * toggle Like/Dislike Button
 	 */
 	const like = document.getElementById('like-button');
 	const dislike = document.getElementById('dislike-button');
 	const feedback = document.getElementById('ratingFeedback');
-
+	
 	like.addEventListener('click', () => {
 		like.classList.add('primary','white--text');
-		feedback.classList.toggle('show');
+		feedback.classList.add('show');
+		rating = 'Good';
 		dislike.classList.remove('primary','white--text');
 	});
 
 	dislike.addEventListener('click', () => {
 		dislike.classList.add('primary','white--text');
-		feedback.classList.toggle('show');
+		feedback.classList.add('show');
+		rating = 'Bad';
 		like.classList.remove('primary','white--text');
 	});
+
+	/**
+	 * show Rating Modal
+	 */
+	const ratingModal = document.getElementById('showRatingModal');
+	const chatRating = document.getElementById('chatRating');
+	const submitRating = document.getElementById('submitRating');
+	const chatEmpty = document.getElementById('chatEmpty');
+	const feedbackbtn = document.getElementById('feedbackBtn');
+	const ratingResultContent = document.getElementById('ratingResultContent');
+	const ratingResult = document.getElementById('ratingResult');
+	const commentRating = document.getElementById('commentRating');
+	ratingModal.addEventListener('click', () => {
+		chatRating.classList.remove('hide');
+		chatEmpty.classList.add('hide');
+	});
+
+	submitRating.addEventListener('click', () => {
+		feedbackbtn.classList.add('hide');
+		ratingResultContent.classList.remove('hide');
+		commentRating.innerHTML = document.getElementById('commentArea').value;
+		ratingResult.innerHTML = rating;
+	});
+
 
 });
