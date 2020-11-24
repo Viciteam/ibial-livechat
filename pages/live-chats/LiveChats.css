@@ -6,8 +6,17 @@
 .secondary {
   background-color: #637fdd;
 }
+.lightgray {
+  background-color: #f2f2f2;
+}
+.mediumgray {
+  background-color: #c4c4c4;
+}
 .gray {
   background-color: #dfdfe1;
+}
+.darkgray {
+  background-color: #596366;
 }
 .orange {
   background-color: #f2994a;
@@ -21,8 +30,14 @@
 .secondary--text {
   color: #637fdd;
 }
+.lightgray--text {
+  color: #f2f2f2;
+}
 .gray--text {
   color: #bdbdbd;
+}
+.darkgray--text {
+  color: #596366;
 }
 .orange--text {
   color: #f2994a;
@@ -39,6 +54,18 @@
 }
 .border-rounded {
   border-radius: 100px !important;
+}
+.border-lg {
+  border-radius: 10px !important;
+}
+.border-md {
+  border-radius: 8px !important;
+}
+.border-sm {
+  border-radius: 4px !important;
+}
+.border-xs {
+  border-radius: 2px !important;
 }
 .border-default {
   border-color: #ebecef;
@@ -65,6 +92,14 @@
 .avatar-large {
   width: 60px;
   height: 60px;
+}
+.avatar-small {
+  width: 30px;
+  height: 30px;
+}
+.avatar-xsmall {
+  width: 25px;
+  height: 25px;
 }
 .display-block {
   display: block;
@@ -134,6 +169,7 @@
 }
 /* End Font Size */
 
+/* Start Button */
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .show > .btn-outline-primary.dropdown-toggle {
@@ -158,60 +194,35 @@
   text-decoration: none;
   background-color: #4db7a1 !important;
 }
+/* End Button */
 
-/* Lerroux CSS */
-.sidebar-menu {
-  position: absolute;
-  width: 80px;
-  height: 770px;
-  left: 0px;
-  top: 0px;
-  background: #F8F8F8;
-  box-shadow: inset -10px 0px 20px rgba(235, 236, 239, 0.5), inset -1px 0px 0px #EBECEF;
-  z-index: 1;
-  overflow-x: hidden;
-  padding-top: 16px;
+/* Start Mix Button */
+.btn-mix {
+  display: inline-flex;
+  align-items: center;
 }
-.sidebar-menu a {
-  padding: 6px 8px 20px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  text-align: center;
-}
-.sidebar-menu a:hover {
-  color: #4db7a1;
-}
-.ibiallogo {
-  padding: 6px 8px 40px 16px !important;
-}
-@font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?lrl5fw');
-  src:  url('fonts/icomoon.eot?lrl5fw#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?lrl5fw') format('truetype'),
-    url('fonts/icomoon.woff?lrl5fw') format('woff'),
-    url('fonts/icomoon.svg?lrl5fw#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+/* End Button */
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Start Scroll */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
 }
 
-.icon-pulse:before {
-  content: "\e900";
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
 }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 5px;
+}
+/* end Scroll */
+
+/* Start Scroll */
+.mt-n1 {
+  margin-top: -4px;
+}
+/* end Scroll */

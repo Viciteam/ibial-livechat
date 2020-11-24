@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./LiveChats.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="application_wrap">
+      <div class="main">
+        <div class="main_wrap">
+          <div class="container-fluid px-0 fill-height full-height">
+            <div class="layout column rooms_container">
+              <div class="font-weight-bold text-v my-3 mx-3">Live Chats</div>
+
+              <div class="dropdown-divider m-0 border-default"></div>
+
+              <div
+                class="font-weight-bold text-uppercase text-iv p-3 darkgray--text mx-2"
+              >
+                My Chats (2)
+              </div>
+
+              <div class="flex overflow-auto mx-2">
+                <div id="list-example" class="list-group">
+                  <div
+                    class="list-group-item-action lightgray px-3 py-3 border-sm"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="avatar avatar-small mediumgray position-relative"
+                      ></div>
+                      <span class="ml-2 font-weight-bold px-1"> Visitor </span>
+
+                      <span class="ml-2 px-1 ml-auto darkgray--text text-iii">
+                        3 min
+                      </span>
+                    </div>
+
+                    <div class="darkgray--text text-iv mt-3">
+                      Lorem ipsum dolor sit amet, te sit viderer assueverit
+                      referrentur. Ea...
+                    </div>
+                  </div>
+                  <div class="list-group-item-action px-3 py-3 border-sm mt-1">
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="avatar avatar-small mediumgray position-relative"
+                      ></div>
+                      <span class="ml-2 font-weight-bold px-1"> Visitor </span>
+
+                      <span class="ml-2 px-1 ml-auto darkgray--text text-iii">
+                        1 min
+                      </span>
+                    </div>
+
+                    <div class="darkgray--text text-iv mt-3">
+                      Lorem ipsum dolor sit amet, te sit viderer assueverit
+                      referrentur. Ea...
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="font-weight-bold text-uppercase text-iv p-3 darkgray--text mx-2"
+              >
+                Queued (1)
+              </div>
+
+              <div class="flex overflow-auto mx-2">
+                <div id="list-example" class="list-group">
+                  <div
+                    class="list-group-item-action lightgray px-3 py-3 border-sm"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="avatar avatar-small mediumgray position-relative"
+                      ></div>
+                      <span class="ml-2 px-1">
+                        <span class="font-weight-bold">Visitor</span>
+                        <br />
+                        <span class="darkgray--text text-iii mt-n1 d-block">
+                          Assigned to Sales Team
+                        </span>
+                      </span>
+
+                      <span class="ml-2 px-1 ml-auto darkgray--text text-iii">
+                        10 min
+                      </span>
+                    </div>
+
+                    <div class="darkgray--text text-iv mt-3">Lorem ipsum?</div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="font-weight-bold text-uppercase text-iv p-3 darkgray--text mx-2"
+              >
+                All Chats (1)
+              </div>
+
+              <div class="flex overflow-auto mx-2">
+                <div id="list-example" class="list-group">
+                  <div
+                    class="list-group-item-action lightgray px-3 py-3 border-sm"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="avatar avatar-small mediumgray position-relative"
+                      ></div>
+                      <span class="ml-2 px-1">
+                        <span class="font-weight-bold">Visitor</span>
+                        <br />
+                        <span class="darkgray--text text-iii mt-n1 d-block">
+                          Assigned to Agent Team
+                        </span>
+                      </span>
+
+                      <span class="ml-2 px-1 ml-auto darkgray--text text-iii">
+                        10 min
+                      </span>
+                    </div>
+
+                    <div class="darkgray--text text-iv mt-3">
+                      Can you help me
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="layout column chatview_container">
+              <div class="d-flex align-items-center">
+                <div class="font-weight-bold text-v my-3 mx-3">Live Chats</div>
+
+                <div class="dropdown ml-auto">
+                  <div class="input-group justify-content-center">
+                    <div class="input-group-btn">
+                      <button
+                        class="btn btn-info btn-md dropdown-toggle btn-outline-primary btn-mix border-rounded"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <div
+                          class="avatar avatar-small mediumgray mr-2"
+                        ></div>
+                        Agent
+                      </button>
+
+                      <div
+                        class="dropdown-menu"
+                        onchange="selectMenu1"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#" data="brown">
+                          Agent
+                        </a>
+                        <a class="dropdown-item" href="#" data="blue">
+                          Admin
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <span class="ml-2 px-1 darkgray--text">
+                  <i class="fa fa-ellipsis-v text-vi" aria-hidden="true"></i>
+                </span>
+              </div>
+
+              <div class="dropdown-divider m-0 border-default"></div>
+
+              <div class="flex overflow-auto"></div>
+              <div class="flex overflow-auto"></div>
+            </div>
+            <div class="layout column details_container">
+              <div class="flex overflow-auto"></div>
+              <div class="flex overflow-auto"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  .application_wrap {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    position: relative;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    max-width: 100%;
+    -webkit-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .main_wrap {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    max-width: 100%;
+    position: relative;
+  }
+  .fill-height {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .full-height {
+    height: 100%;
+  }
+  .layout {
+    height: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    min-width: 0;
+  }
+  .layout.column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .layout.column .flex {
+    max-width: 100%;
+  }
+  .overflow-auto {
+    overflow-y: auto !important;
+  }
+  .flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+  .rooms_container {
+    max-width: 23%;
+    height: calc(100vh - 0px) !important;
+  }
+  .chatview_container {
+    max-width: 54%;
+    height: calc(100vh - 0px) !important;
+  }
+  .details_container {
+    max-width: 23%;
+    height: calc(100vh - 0px) !important;
+  }
+</style>
+
+<script>
+  $(".dropdown-menu a ").click(function () {
+    $(this).parents(".input-group-btn").find(".btn").text($(this).text());
+  });
+</script>
