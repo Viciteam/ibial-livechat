@@ -55,4 +55,31 @@ document.addEventListener('DOMContentLoaded', function(e) {
 		toggleMute.innerHTML = toggleMute.innerHTML === 'Mute' ? 'Unmute' : 'Mute';
 	});
 
+	/**
+	 * show Rating Modal
+	 */
+	const ratingModal = document.getElementById('showRatingModal');
+	ratingModal.addEventListener('click', () => {
+		$("#ratingModal").modal();
+	});
+
+	/**
+	 * toggle Like/Dislike Button
+	 */
+	const like = document.getElementById('like-button');
+	const dislike = document.getElementById('dislike-button');
+	const feedback = document.getElementById('ratingFeedback');
+
+	like.addEventListener('click', () => {
+		like.classList.add('primary','white--text');
+		feedback.classList.toggle('show');
+		dislike.classList.remove('primary','white--text');
+	});
+
+	dislike.addEventListener('click', () => {
+		dislike.classList.add('primary','white--text');
+		feedback.classList.toggle('show');
+		like.classList.remove('primary','white--text');
+	});
+
 });

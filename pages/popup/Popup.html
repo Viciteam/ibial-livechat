@@ -276,12 +276,48 @@
             </div>
             <div class="modal-footer mx-auto">
                 <button type="button" class="btn btn-default modal-btn" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-danger white--text modal-btn" data-dismiss="modal">Close chat</button>
+                <button type="button" id="showRatingModal" class="btn btn-danger white--text modal-btn" data-dismiss="modal">Close chat</button>
             </div>
         </div>
         
         </div>
     </div>
+
+    <!-- Modal Rating for Closing the chat -->
+    <div class="modal fade" id="ratingModal" role="dialog">
+        <div class="modal-dialog modal-send-transcript">
+        
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h7 class="modal-title mx-auto text--center">You have closed the chat</h7>
+            </div>
+            <div class="modal-body mx-auto">
+                <div class="text--center white--text primary mx-auto star-rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <span class="mt-3">How would you rate this chat?</span>
+                <div class="text--center pt-3">
+                    <button type="button" class="btn rating-btn" id="like-button">
+                        <i class="far fa-thumbs-up"></i>
+                    </button>
+                    <button type="button" class="btn rating-btn" id="dislike-button">
+                        <i class="far fa-thumbs-down"></i>
+                    </button>
+                </div>
+                <div class="rating-feedback mt-3" id="ratingFeedback">
+                    <p>Feel free to give us some feedback below:</p>
+                    <input type="text" class="py-2 px-3 send-feedback-input"/>
+                </div>
+            </div>
+            <div class="modal-footer mx-auto">
+                <button type="button" class="btn primary white--text modal-btn submit-rating-btn" data-dismiss="modal">Submit</button>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
       <div class="modal fade" id="record-modal" role="dialog">
           <div class="modal-dialog modal-lg">
 

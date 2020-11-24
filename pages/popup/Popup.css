@@ -168,3 +168,23 @@ body {
 .modal-btn {
     width: 150px;
 }
+
+.star-rating {
+    width: 30px;
+    padding: 3px 5px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.rating-btn {
+    font-size: 18px;
+    padding: 3px 7px;
+    border-radius: 25px;
+}
+.rating-feedback {
+    display: none;
+    width: 250px;
+    text-align: center;
+}
+.submit-rating-btn {
+    width: 240px;
+}
