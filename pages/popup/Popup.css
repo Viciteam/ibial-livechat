@@ -62,13 +62,17 @@ body {
 .popup-interface-btn {
     padding: 10px;
     border-radius: 15px 15px 0px 0px;
+    width: 400px;
 }
 
 .chat-widget-interface {
-    width: 348px;
+    width: 400px;
     position: fixed;
 	bottom: 10px;
     right: 45px;
+    border: 1px solid #a0a8b070;
+    padding: 0px 15px;
+    border-radius: 20px;
     display: none;
 }
 
