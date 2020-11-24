@@ -33,409 +33,606 @@
 
   <body>
     <div class="container-fluid">
-    <!--main Container Template-->
-    <div class="row">
-        <div class ="col-1">
+      <div class="row">
+        <div class="col-1">
           <div class="sidebar-menu">
-                <a href="#home" class="ibiallogo"><img src="iBialLogo2.png"></a>
-                <a href="#home"><i class="far fa-comment"></i></a>
-                <a href="#services"><i class="far fa-clock"></i></i></a>
-                <a href="#clients"><i class="fas fa-user-friends"></i></a>
-                <a href="#contact"><i class="icon-pulse" style="font-size:30px"></i></a>
-                <a href="#clients"><i class="fas fa-cog"></i></a>
+            <a href="#home" class="ibiallogo"><img src="iBialLogo2.png" /></a>
+            <a href="#home"><i class="far fa-comment"></i></a>
+            <a href="#services"><i class="far fa-clock"></i></a>
+            <a href="#clients"><i class="fas fa-user-friends"></i></a>
+            <a href="#contact"
+              ><i class="icon-pulse" style="font-size: 30px"></i
+            ></a>
+            <a href="#clients"><i class="fas fa-cog"></i></a>
           </div>
         </div>
-        <div class ="col-11">
-                <!-- Nav tabs -->
-                <div class="row">
-                  <div class="col-9">
-                    <ul class="nav nav--underline primary--text px-3" role="tablist">
-                      <li class="nav-item">
-                        <a
-                          class="nav-link py-3 active font-weight-semi-bold text-secondary"
-                          id="home-tab"
-                          data-toggle="tab"
-                          href="#home"
-                          role="tab"
-                          aria-controls="home"
-                          aria-selected="true"
-                          >Agents<span>(3)</span></a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          class="nav-link py-3 font-weight-semi-bold text-secondary"
-                          id="profile-tab"
-                          data-toggle="tab"
-                          href="#profile"
-                          role="tab"
-                          aria-controls="profile"
-                          aria-selected="false"
-                          >Teams<span>(2)</span></a
-                        >
-                      </li>
 
-                      <div class="dropdown ml-auto my-auto">
-                        <button
-                          class="btn btn-outline-primary dropdown-none dropdown-toggle btn-md border-rounded px-5 font-weight-semi-bold"
-                          id="dropdownMenuButton"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                          append-icon=""
-                          type="submit"
-                        >
-                          New
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">
-                            <i class="fas fa-user-alt primary--text mr-2 pr-1"></i>New agent</a
-                          >
-                          <a class="dropdown-item" href="#">
-                            <i class="fas fa-user-friends primary--text mr-2"></i>New team</a
-                          >
-                        </div>
-                      </div>
-                    </ul>
-                    <div class="dropdown-divider m-0 border-default"></div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-9">
+              <ul class="nav nav--underline primary--text px-3" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link py-3 active font-weight-semi-bold text-secondary"
+                    id="home-tab"
+                    data-toggle="tab"
+                    href="#home"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                    >Agents<span>(3)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link py-3 font-weight-semi-bold text-secondary"
+                    id="profile-tab"
+                    data-toggle="tab"
+                    href="#profile"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                    >Teams<span>(2)</span></a
+                  >
+                </li>
 
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                      <div
-                        class="tab-pane active py-2"
-                        id="home"
-                        role="tabpanel"
-                        aria-labelledby="home-tab"
-                      >
-                        <input
-                          type="text"
-                          class="form-control py-2 mb-2 border-none"
-                          placeholder="Search"
-                          aria-label="Username"
-                          aria-describedby="basic-addon1"
-                        />
-
-                        <div class="dropdown-divider m-0 border-default"></div>
-
-                        <!-- Table -->
-                        <table class="table table-hover">
-                          <thead>
-                            <tr>
-                              <th
-                                scope="col"
-                                class="text-secondary font-weight-semi-bold border-none"
-                              >
-                                Status
-                              </th>
-                              <th
-                                scope="col"
-                                class="text-secondary font-weight-semi-bold border-none"
-                              >
-                                Name
-                              </th>
-                              <th
-                                scope="col"
-                                class="text-secondary font-weight-semi-bold border-none"
-                              >
-                                Role
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th scope="row" class="border-default">
-                                <div
-                                  class="avatar avatar-normal bg-secondary position-relative"
-                                >
-                                  <span
-                                    class="badge-status badge-status-br badge-status-border-white badge-status-bordered badge-status-success"
-                                  ></span>
-                                </div>
-                              </th>
-                              <td class="border-default">
-                                <div>
-                                  <span> Victor </span>
-                                  <br />
-                                  <span class="gray--text"> victor@company.com </span>
-                                </div>
-                              </td>
-                              <td class="border-default align-middle">
-                                <span
-                                  class="badge badge-pill secondary text-white text-uppercase py-2 px-3"
-                                  >Owner</span
-                                >
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <th scope="row" class="border-default">
-                                <div
-                                  class="avatar avatar-normal bg-secondary position-relative"
-                                >
-                                  <span
-                                    class="badge-status badge-status-br badge-status-border-white badge-status-bordered badge-status-success"
-                                  ></span>
-                                </div>
-                              </th>
-                              <td class="border-default">
-                                <div>
-                                  <span> Eddie </span>
-                                  <br />
-                                  <span class="gray--text"> eddie@company.com </span>
-                                </div>
-                              </td>
-                              <td class="border-default align-middle">
-                                <span
-                                  class="badge badge-pill primary text-white text-uppercase py-2 px-3"
-                                  >Admin</span
-                                >
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <th scope="row" class="border-default">
-                                <div
-                                  class="avatar avatar-normal bg-secondary position-relative"
-                                >
-                                  <span
-                                    class="badge-status badge-status-br badge-status-border-white badge-status-bordered badge-status-success"
-                                  ></span>
-                                </div>
-                              </th>
-                              <td class="border-default">
-                                <div>
-                                  <span> Arphie </span>
-                                  <br />
-                                  <span class="gray--text"> arphie@company.com </span>
-                                </div>
-                              </td>
-                              <td class="border-default align-middle">
-                                <span
-                                  class="badge badge-pill gray text-white text-muted text-uppercase py-2 px-3"
-                                  >Agent</span
-                                >
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <th scope="row" class="align-middle border-default">
-                                <div class="text-muted font-weight-semi-bold">
-                                  Pending
-                                </div>
-                              </th>
-                              <td class="border-default">
-                                <div>
-                                  <span> Pending Agent </span>
-                                  <br />
-                                  <span class="gray--text">
-                                    pendingagent@company.com
-                                  </span>
-                                </div>
-                              </td>
-                              <td class="border-default align-middle">
-                                <span
-                                  class="badge badge-pill gray text-white text-muted text-uppercase py-2 px-3"
-                                  >Agent</span
-                                >
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div
-                        class="tab-pane"
-                        id="profile"
-                        role="tabpanel"
-                        aria-labelledby="profile-tab"
-                      >
-                        Teams
-                      </div>
-                    </div>
+                <div class="dropdown ml-auto my-auto">
+                  <button
+                    class="btn btn-outline-primary dropdown-none dropdown-toggle btn-md border-rounded px-5 font-weight-semi-bold"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    append-icon=""
+                    type="submit"
+                  >
+                    New
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-user-alt primary--text mr-2 pr-1"></i>
+                      New agent
+                    </a>
+                    <a
+                      class="dropdown-item"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      <i class="fas fa-user-friends primary--text mr-2"></i>
+                      New team
+                    </a>
                   </div>
 
-                  <div class="col-3">
-                    <div class="d-flex align-content-center py-3">
-                      <div class="mr-auto font-weight-bold my-auto">Agent Details</div>
-                      <div>
-                        <button type="button" class="btn bg-white">
-                          <i class="fas fa-pen primary--text"></i>
-                        </button>
-                      </div>
-                    </div>
-
-                    <div class="dropdown-divider m-0 border-default"></div>
-
-                    <li class="d-flex align-items-center mt-4">
-                      <div class="avatar avatar-large bg-secondary position-relative">
-                        <span
-                          class="badge-status-lg badge-status-br badge-status-border-white badge-status-bordered badge-status-success"
-                        >
-                        </span>
-                      </div>
-                      <span class="ml-2">
-                        <span class="font-weight-semi-bold px-1">Angela</span>
-                        <span
-                          class="badge badge-pill gray text-white text-muted text-uppercase py-2 px-3"
-                          >Agent</span
-                        >
-                        <br />
-                        <span class="font-weight-semi-bold px-1 gray--text">
-                          Angela@company.com
-                        </span>
-                        <br />
-                        <span class="font-weight-normal px-1 gray--text">
-                          Support Agent
-                        </span>
-                      </span>
-                    </li>
-
-                    <div class="ml-5 pl-4 mt-3">
-                      <span class="font-weight-semi-bold">
-                        Status:
-                        <span class="font-weight-bold">Offline</span>
-                      </span>
-                    </div>
-
-                    <div id="accordionteam">
-                      <div class="card border-none mt-4">
-                        <div
-                          class="card-header collapse-flat cursor-pointer"
-                          id="headingOneteam"
-                          data-toggle="collapse"
-                          data-target="#collapseOneteam"
-                          aria-expanded="false"
-                          aria-controls="collapseOneteam"
-                        >
-                          <div class="mr-auto font-weight-bold my-auto">Teams</div>
-                        </div>
-
-                        <div
-                          id="collapseOneteam"
-                          class="collapse show ml-3"
-                          aria-labelledby="headingOneteam"
-                          data-parent="#accordionteam"
-                        >
-                          <li class="d-flex align-items-center mt-4">
-                            <div
-                              class="avatar avatar-text avatar-normal orange position-relative"
-                            >
-                              <h5
-                                class="my-auto mx-auto font-weight-semi-bold text-white"
-                              >
-                                G
-                              </h5>
-                            </div>
-
-                            <span class="ml-2 font-weight-semi-bold px-1">General</span>
-                          </li>
-
-                          <li class="d-flex align-items-center mt-2">
-                            <div
-                              class="avatar avatar-text avatar-normal info position-relative"
-                            >
-                              <h5
-                                class="my-auto mx-auto font-weight-semi-bold text-white"
-                              >
-                                T
-                              </h5>
-                            </div>
-
-                            <span class="ml-2 font-weight-semi-bold px-1"
-                              >Technical Support</span
-                            >
-                          </li>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="accordionChat">
-                      <div class="card border-none mt-4">
-                        <div
-                          class="card-header collapse-flat cursor-pointer"
-                          id="headingOne"
-                          data-toggle="collapse"
-                          data-target="#collapseOneChat"
-                          aria-expanded="false"
-                          aria-controls="collapseOneChat"
-                        >
-                          <div class="mr-auto font-weight-bold my-auto">
-                            Chat Information
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModalCenter"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered"
+                      role="document"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header border-none">
+                          <div class="font-weight-bold darkgray--text">
+                            Create New Team
                           </div>
                         </div>
 
-                        <div
-                          id="collapseOneChat"
-                          class="collapse show ml-3"
-                          aria-labelledby="headingOneChat"
-                          data-parent="#accordionChat"
-                        >
-                          <li class="d-flex align-items-center mt-4">
-                            <i class="fas fa-comment-alt gray--text text-v"></i>
+                        <div class="modal-body" style="background: #f8f8f8">
+                          <div
+                            class="text-center font-weight-bold darkgray--text pt-4 d-block"
+                          >
+                            Team Name
+                          </div>
 
-                            <span class="ml-2 font-weight-semi-bold px-1"
-                              >Total Chats</span
+                          <input
+                            type="text"
+                            class="form-control mx-auto my-3"
+                            style="
+                              background: none;
+                              border: none;
+                              border-bottom: 1px solid #bdbdbd;
+                              border-radius: 0;
+                              width: 340px;
+                            "
+                          />
+
+                          <div
+                            class="font-weight-bold darkgray--text mt-5 mb-3"
+                          >
+                            Select Members
+                          </div>
+
+                          <div
+                            class="input-group mb-3 p-2 px-3"
+                            style="
+                              border: 1px solid #f2f2f2;
+                              border-radius: 6px;
+                              background: white;
+                            "
+                          >
+                            <div class="input-group-prepend">
+                              <i
+                                class="fa fa-search my-auto"
+                                id="basic-addon1"
+                              ></i>
+                            </div>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Search agents"
+                              aria-label="Search Agents"
+                              aria-describedby="basic-addon1"
+                              style="
+                                background: none;
+                                border: none;
+                                border-radius: 0;
+                                box-shadow: none !important;
+                              "
+                            />
+                          </div>
+
+                          <div>
+                            <li
+                              class="d-flex align-items-center white py-2 px-3"
                             >
-                          </li>
-
-                          <li class="d-flex align-items-center mt-2">
-                            <i class="fas fa-thumbs-up gray--text text-v"></i>
-
-                            <span class="ml-2 font-weight-semi-bold px-1"
-                              >Average Rating</span
-                            >
-                          </li>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="accordionActions">
-                      <div class="card border-none mt-4">
-                        <div
-                          class="card-header collapse-flat cursor-pointer"
-                          id="headingOne"
-                          data-toggle="collapse"
-                          data-target="#collapseOneActions"
-                          aria-expanded="false"
-                          aria-controls="collapseOneActions"
-                        >
-                          <div class="mr-auto font-weight-bold my-auto">Actions</div>
-                        </div>
-
-                        <div
-                          id="collapseOneActions"
-                          class="collapse show ml-3"
-                          aria-labelledby="headingOneActions"
-                          data-parent="#accordionActions"
-                        >
-                          <li class="d-flex align-items-center mt-4">
-                            <div class="custom-control custom-switch">
                               <input
                                 type="checkbox"
-                                class="custom-control-input"
-                                id="customSwitch1"
+                                class="mr-2"
+                                aria-label="item"
                               />
-                              <label class="custom-control-label" for="customSwitch1">
-                                <span class="ml-2 font-weight-semi-bold px-1">
-                                  Enable admin privileges
+
+                              <div
+                                class="avatar avatar-normal bg-secondary position-relative"
+                              >
+                                <span
+                                  class="badge-status badge-status-br badge-status-border-white badge-status-bordered badge-status-success"
+                                >
                                 </span>
-                              </label>
-                            </div>
-                          </li>
+                              </div>
+                              <span class="ml-2">
+                                <span
+                                  class="font-weight-semi-bold px-1 darkgray--text"
+                                >
+                                  Angela
+                                </span>
+                                <br />
+                                <span
+                                  class="font-weight-normal px-1 gray--text"
+                                >
+                                  Angela@company.com
+                                </span>
+                              </span>
 
-                          <div class="gray--text mt-2 px-2">
-                            This gives the agent full access e.g. viewing stats, managing
-                            agents, and editing chat settings.
+                              <div class="ml-auto">
+                                <span
+                                  class="badge badge-pill gray white--text text-muted text-uppercase py-2 px-3"
+                                  >Agent</span
+                                >
+                              </div>
+                            </li>
+
+                            <div
+                              class="dropdown-divider m-0 border-default"
+                            ></div>
+
+                            <li
+                              class="d-flex align-items-center white py-2 px-3"
+                            >
+                              <input
+                                type="checkbox"
+                                class="mr-2"
+                                aria-label="item"
+                              />
+
+                              <div
+                                class="avatar avatar-normal bg-secondary position-relative"
+                              >
+                                <span
+                                  class="badge-status badge-status-br badge-status-border-white badge-status-bordered badge-status-success"
+                                >
+                                </span>
+                              </div>
+                              <span class="ml-2">
+                                <span
+                                  class="font-weight-semi-bold px-1 darkgray--text"
+                                >
+                                  Johnny
+                                </span>
+                                <br />
+                                <span
+                                  class="font-weight-normal px-1 gray--text"
+                                >
+                                  Johnny@company.com
+                                </span>
+                              </span>
+
+                              <div class="ml-auto">
+                                <span
+                                  class="badge badge-pill primary white--text text-muted text-uppercase py-2 px-3"
+                                  >Admin</span
+                                >
+                              </div>
+                            </li>
+
+                            <div
+                              class="dropdown-divider m-0 border-default"
+                            ></div>
                           </div>
+                        </div>
 
-                          <button type="button" class="btn btn-text btn-error my-3">
-                            Delete Agent
+                        <div
+                          class="modal-footer border-none"
+                          style="background: #f8f8f8"
+                        >
+                          <button
+                            class="btn border-rounded white px-4 darkgray--text font-weight-bold"
+                            style="border: 1px solid #f2f2f2;"
+                          >
+                            Cancel
+                          </button>
+                          <button
+                            class="btn primary border-rounded white--text px-4 font-weight-bold"
+                          >
+                            Send
                           </button>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </ul>
+              <div class="dropdown-divider m-0 border-default"></div>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div
+                  class="tab-pane active py-2"
+                  id="home"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <input
+                    type="text"
+                    class="form-control py-2 mb-2 border-none"
+                    placeholder="Search"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+
+                  <div class="dropdown-divider m-0 border-default"></div>
+
+                  <!-- Table -->
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th
+                          scope="col"
+                          class="text-secondary font-weight-semi-bold border-none"
+                        >
+                          Status
+                        </th>
+                        <th
+                          scope="col"
+                          class="text-secondary font-weight-semi-bold border-none"
+                        >
+                          Name
+                        </th>
+                        <th
+                          scope="col"
+                          class="text-secondary font-weight-semi-bold border-none"
+                        >
+                          Role
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" class="border-default">
+                          <div
+                            class="avatar avatar-normal bg-secondary position-relative"
+                          >
+                            <span
+                              class="badge-status badge-status-br badge-status-border-white badge-status-bordered badge-status-success"
+                            ></span>
+                          </div>
+                        </th>
+                        <td class="border-default">
+                          <div>
+                            <span> Victor </span>
+                            <br />
+                            <span class="gray--text"> victor@company.com </span>
+                          </div>
+                        </td>
+                        <td class="border-default align-middle">
+                          <span
+                            class="badge badge-pill secondary text-white text-uppercase py-2 px-3"
+                            >Owner</span
+                          >
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" class="border-default">
+                          <div
+                            class="avatar avatar-normal bg-secondary position-relative"
+                          >
+                            <span
+                              class="badge-status badge-status-br badge-status-border-white badge-status-bordered badge-status-success"
+                            ></span>
+                          </div>
+                        </th>
+                        <td class="border-default">
+                          <div>
+                            <span> Eddie </span>
+                            <br />
+                            <span class="gray--text"> eddie@company.com </span>
+                          </div>
+                        </td>
+                        <td class="border-default align-middle">
+                          <span
+                            class="badge badge-pill primary text-white text-uppercase py-2 px-3"
+                            >Admin</span
+                          >
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" class="border-default">
+                          <div
+                            class="avatar avatar-normal bg-secondary position-relative"
+                          >
+                            <span
+                              class="badge-status badge-status-br badge-status-border-white badge-status-bordered badge-status-success"
+                            ></span>
+                          </div>
+                        </th>
+                        <td class="border-default">
+                          <div>
+                            <span> Arphie </span>
+                            <br />
+                            <span class="gray--text"> arphie@company.com </span>
+                          </div>
+                        </td>
+                        <td class="border-default align-middle">
+                          <span
+                            class="badge badge-pill gray text-white text-muted text-uppercase py-2 px-3"
+                            >Agent</span
+                          >
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" class="align-middle border-default">
+                          <div class="text-muted font-weight-semi-bold">
+                            Pending
+                          </div>
+                        </th>
+                        <td class="border-default">
+                          <div>
+                            <span> Pending Agent </span>
+                            <br />
+                            <span class="gray--text">
+                              pendingagent@company.com
+                            </span>
+                          </div>
+                        </td>
+                        <td class="border-default align-middle">
+                          <span
+                            class="badge badge-pill gray text-white text-muted text-uppercase py-2 px-3"
+                            >Agent</span
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div
+                  class="tab-pane"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  Teams
+                </div>
               </div>
+            </div>
+
+            <div class="col-3">
+              <div class="d-flex align-content-center py-3">
+                <div class="mr-auto font-weight-bold my-auto">
+                  Agent Details
+                </div>
+                <div>
+                  <button type="button" class="btn bg-white">
+                    <i class="fas fa-pen primary--text"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="dropdown-divider m-0 border-default"></div>
+
+              <li class="d-flex align-items-center mt-4">
+                <div class="avatar avatar-large bg-secondary position-relative">
+                  <span
+                    class="badge-status-lg badge-status-br badge-status-border-white badge-status-bordered badge-status-success"
+                  >
+                  </span>
+                </div>
+                <span class="ml-2">
+                  <span class="font-weight-semi-bold px-1">Angela</span>
+                  <span
+                    class="badge badge-pill gray text-white text-muted text-uppercase py-2 px-3"
+                    >Agent</span
+                  >
+                  <br />
+                  <span class="font-weight-semi-bold px-1 gray--text">
+                    Angela@company.com
+                  </span>
+                  <br />
+                  <span class="font-weight-normal px-1 gray--text">
+                    Support Agent
+                  </span>
+                </span>
+              </li>
+
+              <div class="ml-5 pl-4 mt-3">
+                <span class="font-weight-semi-bold">
+                  Status:
+                  <span class="font-weight-bold">Offline</span>
+                </span>
+              </div>
+
+              <div id="accordionteam">
+                <div class="card border-none mt-4">
+                  <div
+                    class="card-header collapse-flat cursor-pointer"
+                    id="headingOneteam"
+                    data-toggle="collapse"
+                    data-target="#collapseOneteam"
+                    aria-expanded="false"
+                    aria-controls="collapseOneteam"
+                  >
+                    <div class="mr-auto font-weight-bold my-auto">Teams</div>
+                  </div>
+
+                  <div
+                    id="collapseOneteam"
+                    class="collapse show ml-3"
+                    aria-labelledby="headingOneteam"
+                    data-parent="#accordionteam"
+                  >
+                    <li class="d-flex align-items-center mt-4">
+                      <div
+                        class="avatar avatar-text avatar-normal orange position-relative"
+                      >
+                        <h5
+                          class="my-auto mx-auto font-weight-semi-bold text-white"
+                        >
+                          G
+                        </h5>
+                      </div>
+
+                      <span class="ml-2 font-weight-semi-bold px-1"
+                        >General</span
+                      >
+                    </li>
+
+                    <li class="d-flex align-items-center mt-2">
+                      <div
+                        class="avatar avatar-text avatar-normal info position-relative"
+                      >
+                        <h5
+                          class="my-auto mx-auto font-weight-semi-bold text-white"
+                        >
+                          T
+                        </h5>
+                      </div>
+
+                      <span class="ml-2 font-weight-semi-bold px-1"
+                        >Technical Support</span
+                      >
+                    </li>
+                  </div>
+                </div>
+              </div>
+              <div id="accordionChat">
+                <div class="card border-none mt-4">
+                  <div
+                    class="card-header collapse-flat cursor-pointer"
+                    id="headingOne"
+                    data-toggle="collapse"
+                    data-target="#collapseOneChat"
+                    aria-expanded="false"
+                    aria-controls="collapseOneChat"
+                  >
+                    <div class="mr-auto font-weight-bold my-auto">
+                      Chat Information
+                    </div>
+                  </div>
+
+                  <div
+                    id="collapseOneChat"
+                    class="collapse show ml-3"
+                    aria-labelledby="headingOneChat"
+                    data-parent="#accordionChat"
+                  >
+                    <li class="d-flex align-items-center mt-4">
+                      <i class="fas fa-comment-alt gray--text text-v"></i>
+
+                      <span class="ml-2 font-weight-semi-bold px-1"
+                        >Total Chats</span
+                      >
+                    </li>
+
+                    <li class="d-flex align-items-center mt-2">
+                      <i class="fas fa-thumbs-up gray--text text-v"></i>
+
+                      <span class="ml-2 font-weight-semi-bold px-1"
+                        >Average Rating</span
+                      >
+                    </li>
+                  </div>
+                </div>
+              </div>
+              <div id="accordionActions">
+                <div class="card border-none mt-4">
+                  <div
+                    class="card-header collapse-flat cursor-pointer"
+                    id="headingOne"
+                    data-toggle="collapse"
+                    data-target="#collapseOneActions"
+                    aria-expanded="false"
+                    aria-controls="collapseOneActions"
+                  >
+                    <div class="mr-auto font-weight-bold my-auto">Actions</div>
+                  </div>
+
+                  <div
+                    id="collapseOneActions"
+                    class="collapse show ml-3"
+                    aria-labelledby="headingOneActions"
+                    data-parent="#accordionActions"
+                  >
+                    <li class="d-flex align-items-center mt-4">
+                      <div class="custom-control custom-switch">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="customSwitch1"
+                        />
+                        <label class="custom-control-label" for="customSwitch1">
+                          <span class="ml-2 font-weight-semi-bold px-1">
+                            Enable admin privileges
+                          </span>
+                        </label>
+                      </div>
+                    </li>
+
+                    <div class="gray--text mt-2 px-2">
+                      This gives the agent full access e.g. viewing stats,
+                      managing agents, and editing chat settings.
+                    </div>
+
+                    <button type="button" class="btn btn-text btn-error my-3">
+                      Delete Agent
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!--main Container Template-->
   </body>
 </html>
