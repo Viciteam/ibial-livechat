@@ -46,13 +46,7 @@
 
               <div class="dropdown-divider m-0 border-default"></div>
 
-              <div
-                class="font-weight-bold text-uppercase text-iv p-3 darkgray--text px-2"
-              >
-                My Chats (2)
-              </div>
-
-              <div class="flex overflow-auto px-2">
+              <div class="flex overflow-auto px-2 mt-2">
                 <div id="list-example" class="list-group">
                   <div
                     class="list-group-item-action lightgray px-3 py-3 border-sm"
@@ -122,41 +116,6 @@
                     </div>
 
                     <div class="darkgray--text text-iv mt-3">Lorem ipsum?</div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="font-weight-bold text-uppercase text-iv p-3 darkgray--text px-2"
-              >
-                All Chats (1)
-              </div>
-
-              <div class="flex overflow-auto px-2">
-                <div id="list-example" class="list-group">
-                  <div
-                    class="list-group-item-action lightgray px-3 py-3 border-sm"
-                  >
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="avatar avatar-small mediumgray position-relative"
-                      ></div>
-                      <span class="ml-2 px-1">
-                        <span class="font-weight-bold">Visitor</span>
-                        <br />
-                        <span class="darkgray--text text-iii mt-n1 d-block">
-                          Assigned to Agent Team
-                        </span>
-                      </span>
-
-                      <span class="ml-2 px-1 ml-auto darkgray--text text-iii">
-                        10 min
-                      </span>
-                    </div>
-
-                    <div class="darkgray--text text-iv mt-3">
-                      Can you help me
-                    </div>
                   </div>
                 </div>
               </div>
@@ -334,7 +293,7 @@
               </div>
 
               <div
-                class="flex mx-3 my-2 p-3 border-sm"
+                class="flex mx-3 my-2 p-3 border-sm chatallfield_container"
                 style="border: 1px solid #ebecef"
               >
                 <textarea
@@ -567,14 +526,26 @@
     max-width: 80%;
     line-height: 130%;
   }
+  
+  .chatallfield_container.active {
+    box-shadow: 0px 0px 3px 1px #4db7a1;
+  }
 </style>
 
 <script>
-  $(document).ready(function () {
+  $(document).ready(() => {
     $(".chatview_container .chats_container").scrollTop($(document).height());
   });
 
-  $(".dropdown-menu a ").click(function () {
+  $(".dropdown-menu a ").click(() => {
     $(this).parents(".input-group-btn").find(".btn").text($(this).text());
   });
+
+  $(".chatfield_container")
+    .focus(() => {
+      $(".chatallfield_container").addClass("active");
+    })
+    .blur(() => {
+      $(".chatallfield_container").removeClass("active");
+    });
 </script>

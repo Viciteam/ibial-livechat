@@ -1,0 +1,252 @@
+/* Agent Page CSS */
+/* Color Theme */
+.primary {
+  background-color: #4db7a1;
+}
+.secondary {
+  background-color: #637fdd;
+}
+.lightgray {
+  background-color: #f2f2f2;
+}
+.mediumgray {
+  background-color: #c4c4c4;
+}
+.gray {
+  background-color: #dfdfe1;
+}
+.darkgray {
+  background-color: #596366;
+}
+.orange {
+  background-color: #f2994a;
+}
+.info {
+  background-color: #2d9cdb;
+}
+.primary--text {
+  color: #4db7a1;
+}
+.secondary--text {
+  color: #637fdd;
+}
+.lightgray--text {
+  color: #f2f2f2;
+}
+.gray--text {
+  color: #bdbdbd;
+}
+.darkgray--text {
+  color: #596366;
+}
+.white--text {
+  color: #ffffff;
+}
+.orange--text {
+  color: #f2994a;
+}
+/* End Color Theme */
+
+/* Custom CSS */
+.nav--underline a.active {
+  border-bottom: 2.5px solid #55c9ad;
+  color: #4db7a1 !important;
+}
+.border-none {
+  border: none !important;
+}
+.border-lightgray {
+  border-color: #ebecef !important;
+}
+.border-rounded {
+  border-radius: 100px !important;
+}
+.border-lg {
+  border-radius: 10px !important;
+}
+.border-md {
+  border-radius: 8px !important;
+}
+.border-sm {
+  border-radius: 4px !important;
+}
+.border-xs {
+  border-radius: 2px !important;
+}
+.border-default {
+  border-color: #ebecef;
+}
+.font-weight-semi-bold {
+  font-weight: 600;
+}
+.avatar {
+  border-radius: 100px;
+}
+.avatar-text {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.avatar-normal {
+  width: 44px;
+  height: 44px;
+}
+.avatar-large {
+  width: 60px;
+  height: 60px;
+}
+.avatar-small {
+  width: 30px;
+  height: 30px;
+}
+.avatar-xsmall {
+  width: 25px;
+  height: 25px;
+}
+.display-block {
+  display: block;
+}
+.position-relative {
+  position: relative;
+}
+.badge-status {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border-radius: 20px;
+}
+.badge-status-lg {
+  width: 16.5px;
+  height: 16.5px;
+  position: absolute;
+  border-radius: 20px;
+}
+.badge-status-bordered {
+  border: 1px solid;
+}
+.badge-status-border-white {
+  border-color: white;
+}
+.badge-status-br {
+  bottom: 0;
+  right: 0;
+}
+.badge-status-success {
+  background-color: #4db7a1;
+}
+.dropdown-none.dropdown-toggle::after,
+.dropdown-none.dropdown-toggle::before {
+  display: none;
+}
+.btn-text {
+  background: none;
+}
+.collapse-flat {
+  /* background: none; */
+  border: none;
+  box-shadow: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Font Size */
+.text-i {
+  font-size: 10px;
+}
+.text-ii {
+  font-size: 12px;
+}
+.text-iii {
+  font-size: 14px;
+}
+.text-iv {
+  font-size: 16px;
+}
+.text-v {
+  font-size: 18px;
+}
+.text-vi {
+  font-size: 20px;
+}
+/* End Font Size */
+
+/* Start Button */
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #4db7a1 !important;
+  border-color: #4db7a1 !important;
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #4db7a1 !important;
+  border-color: #4db7a1 !important;
+}
+.btn-outline-primary {
+  color: #4db7a1;
+  background-color: transparent;
+  background-image: none;
+  border-color: #4db7a1;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #4db7a1 !important;
+}
+/* End Button */
+
+/* Start Mix Button */
+.btn-mix {
+  display: inline-flex;
+  align-items: center;
+}
+.btn-icon {
+  width: 38px;
+  height: 38px;
+  background: none;
+}
+.btn-icon-none::before,
+.btn-icon-none::after {
+  display: none;
+}
+/* End Button */
+
+/* Start Scroll */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 5px;
+}
+/* end Scroll */
+
+/* Start margin */
+.mt-n1 {
+  margin-top: -4px;
+}
+/* end margin */
+
+/* Start textarea */
+.textarea-solo {
+  border: none;
+  resize: none;
+}
+.textarea:focus,
+.btn:focus {
+  border: none;
+  box-shadow: none;
+}
+/* End textarea */

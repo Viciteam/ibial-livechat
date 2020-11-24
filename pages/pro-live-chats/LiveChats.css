@@ -244,7 +244,8 @@
   border: none;
   resize: none;
 }
-.textarea:focus {
+.textarea:focus,
+.btn:focus {
   border: none;
   box-shadow: none;
 }

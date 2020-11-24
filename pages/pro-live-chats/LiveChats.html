@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./LiveChats.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="application_wrap">
+      <div class="main">
+        <div class="main_wrap">
+          <div class="container-fluid px-0 fill-height full-height">
+            <!-- Start Rooms View -->
+
+            <div
+              class="layout column rooms_container"
+              style="background-color: #fcfcfc"
+            >
+              <div class="font-weight-bold text-v my-3 mx-3">Live Chats</div>
+
+              <div class="dropdown-divider m-0 border-default"></div>
+
+              <div
+                class="font-weight-bold text-uppercase text-iv p-3 darkgray--text px-2"
+              >
+                My Chats (2)
+              </div>
+
+              <div class="flex overflow-auto px-2">
+                <div id="list-example" class="list-group">
+                  <div
+                    class="list-group-item-action lightgray px-3 py-3 border-sm"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="avatar avatar-small mediumgray position-relative"
+                      ></div>
+                      <span class="ml-2 font-weight-bold px-1"> Visitor </span>
+
+                      <span class="ml-2 px-1 ml-auto darkgray--text text-iii">
+                        3 min
+                      </span>
+                    </div>
+
+                    <div class="darkgray--text text-iv mt-3">
+                      Lorem ipsum dolor sit amet, te sit viderer assueverit
+                      referrentur. Ea...
+                    </div>
+                  </div>
+                  <div class="list-group-item-action px-3 py-3 border-sm mt-1">
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="avatar avatar-small mediumgray position-relative"
+                      ></div>
+                      <span class="ml-2 font-weight-bold px-1"> Visitor </span>
+
+                      <span class="ml-2 px-1 ml-auto darkgray--text text-iii">
+                        1 min
+                      </span>
+                    </div>
+
+                    <div class="darkgray--text text-iv mt-3">
+                      Lorem ipsum dolor sit amet, te sit viderer assueverit
+                      referrentur. Ea...
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="font-weight-bold text-uppercase text-iv p-3 darkgray--text px-2"
+              >
+                Queued (1)
+              </div>
+
+              <div class="flex overflow-auto px-2">
+                <div id="list-example" class="list-group">
+                  <div
+                    class="list-group-item-action lightgray px-3 py-3 border-sm"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="avatar avatar-small mediumgray position-relative"
+                      ></div>
+                      <span class="ml-2 px-1">
+                        <span class="font-weight-bold">Visitor</span>
+                        <br />
+                        <span class="darkgray--text text-iii mt-n1 d-block">
+                          Assigned to Sales Team
+                        </span>
+                      </span>
+
+                      <span class="ml-2 px-1 ml-auto darkgray--text text-iii">
+                        10 min
+                      </span>
+                    </div>
+
+                    <div class="darkgray--text text-iv mt-3">Lorem ipsum?</div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="font-weight-bold text-uppercase text-iv p-3 darkgray--text px-2"
+              >
+                All Chats (1)
+              </div>
+
+              <div class="flex overflow-auto px-2">
+                <div id="list-example" class="list-group">
+                  <div
+                    class="list-group-item-action lightgray px-3 py-3 border-sm"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="avatar avatar-small mediumgray position-relative"
+                      ></div>
+                      <span class="ml-2 px-1">
+                        <span class="font-weight-bold">Visitor</span>
+                        <br />
+                        <span class="darkgray--text text-iii mt-n1 d-block">
+                          Assigned to Agent Team
+                        </span>
+                      </span>
+
+                      <span class="ml-2 px-1 ml-auto darkgray--text text-iii">
+                        10 min
+                      </span>
+                    </div>
+
+                    <div class="darkgray--text text-iv mt-3">
+                      Can you help me
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End Rooms View -->
+
+            <!-- Start Chat View -->
+
+            <div class="layout column chatview_container">
+              <div class="d-flex align-items-center">
+                <div class="font-weight-bold text-v my-3 mx-3">Visitor</div>
+
+                <div class="dropdown ml-auto">
+                  <div class="input-group justify-content-center">
+                    <div class="input-group-btn">
+                      <button
+                        class="btn btn-info btn-md dropdown-toggle btn-outline-primary btn-mix border-rounded btn-icon-none border-lightgray"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <div class="avatar avatar-small mediumgray mr-2"></div>
+                        Agent
+                      </button>
+
+                      <div
+                        class="dropdown-menu"
+                        onchange="selectMenu1"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item d-flex" href="#" data="brown">
+                          <div
+                            class="avatar avatar-small mediumgray mr-2"
+                          ></div>
+                          Agent
+                        </a>
+                        <a class="dropdown-item d-flex" href="#" data="blue">
+                          <div
+                            class="avatar avatar-small mediumgray mr-2"
+                          ></div>
+                          Admin
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="btn border-rounded btn-icon ml-2"
+                  width="38px"
+                  height="38px"
+                >
+                  <i class="fa fa-ellipsis-v text-vi" aria-hidden="true"></i>
+                </button>
+              </div>
+
+              <div class="dropdown-divider m-0 border-default"></div>
+
+              <div class="flex overflow-auto py-5 chats_container">
+                <ul>
+                  <li class="text-center text-iv gray--text">
+                    Chat started: Jan 01, 2020, 11:30 am
+                  </li>
+                  <li class="me">
+                    <img
+                      class="mr-2"
+                      src="http://emilcarlsson.se/assets/mikeross.png"
+                      alt=""
+                    />
+                    <div class="text-iv gray--text ml-5 pl-2 mb-1">Visitor</div>
+                    <p class="ml-5">
+                      How the hell am I supposed to get a jury to believe you
+                      when I am not even sure that I do?!
+                    </p>
+                  </li>
+                  <li class="notme">
+                    <img
+                      class="mr-2"
+                      src="http://emilcarlsson.se/assets/harveyspecter.png"
+                      alt=""
+                    />
+                    <div class="text-iv gray--text ml-5 pl-2 mb-1">
+                      Agent Name
+                    </div>
+                    <p class="ml-5">
+                      When you're backed against the wall, break the god damn
+                      thing down.
+                    </p>
+                  </li>
+                  <li class="notme">
+                    <img
+                      class="mr-2"
+                      src="http://emilcarlsson.se/assets/harveyspecter.png"
+                      alt=""
+                    />
+                    <div class="text-iv gray--text ml-5 pl-2 mb-1">
+                      Agent Name
+                    </div>
+                    <p class="ml-5">Excuses don't win championships.</p>
+                  </li>
+
+                  <li class="text-center text-iv gray--text">
+                    11:31 am
+                    <br />
+                    Chat Assigned to Agent Name
+                  </li>
+
+                  <li class="me">
+                    <img
+                      class="mr-2"
+                      src="http://emilcarlsson.se/assets/mikeross.png"
+                      alt=""
+                    />
+                    <div class="text-iv gray--text ml-5 pl-2 mb-1">
+                      Agent Name
+                    </div>
+                    <p class="ml-5">
+                      Oh yeah, did Michael Jordan tell you that?
+                    </p>
+                  </li>
+                  <li class="notme">
+                    <img
+                      class="mr-2"
+                      src="http://emilcarlsson.se/assets/harveyspecter.png"
+                      alt=""
+                    />
+                    <div class="text-iv gray--text ml-5 pl-2 mb-1">Visitor</div>
+                    <p class="ml-5">No, I told him that.</p>
+                  </li>
+                  <li class="me">
+                    <img
+                      class="mr-2"
+                      src="http://emilcarlsson.se/assets/harveyspecter.png"
+                      alt=""
+                    />
+                    <div class="text-iv gray--text ml-5 pl-2 mb-1">
+                      Agent Name
+                    </div>
+                    <p class="ml-5">
+                      What are your choices when someone puts a gun to your
+                      head?
+                    </p>
+                  </li>
+                  <li class="notme">
+                    <img
+                      class="mr-2"
+                      src="http://emilcarlsson.se/assets/mikeross.png"
+                      alt=""
+                    />
+                    <div class="text-iv gray--text ml-5 pl-2 mb-1">Visitor</div>
+                    <p class="ml-5">
+                      What are you talking about? You do what they say or they
+                      shoot you.
+                    </p>
+                  </li>
+                  <li class="me">
+                    <img
+                      class="mr-2"
+                      src="http://emilcarlsson.se/assets/harveyspecter.png"
+                      alt=""
+                    />
+                    <div class="text-iv gray--text ml-5 pl-2 mb-1">
+                      Agent Name
+                    </div>
+                    <p class="ml-5">
+                      Wrong. You take the gun, or you pull out a bigger one. Or,
+                      you call their bluff. Or, you do any one of a hundred and
+                      forty six other things.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="flex mx-3 my-2 p-3 border-sm chatallfield_container"
+                style="border: 1px solid #ebecef"
+              >
+                <textarea
+                  class="form-control textarea-solo textarea chatfield_container"
+                  placeholder="Type your reply here.."
+                  oninput="this.dataset.value = this.value"
+                  rows="3"
+                ></textarea>
+
+                <div class="d-flex align-items-center mt-2">
+                  <button class="btn border-rounded btn-icon ml-2">
+                    <i
+                      class="fa fa-paperclip text-vi gray--text"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                  <button class="btn border-rounded btn-icon ml-2">
+                    <i
+                      class="fa fa-smile text-vi gray--text"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                  <button class="btn border-rounded btn-icon ml-2">
+                    <i
+                      class="fa fa-microphone text-vi gray--text"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                  <button class="btn border-rounded btn-icon ml-2">
+                    <i
+                      class="fa fa-video text-vi gray--text"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+
+                  <button
+                    class="btn primary border-rounded ml-auto white--text px-3 font-weight-bold"
+                  >
+                    Send
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- End Chat View -->
+
+            <!-- Start Details View -->
+
+            <div
+              class="layout column details_container"
+              style="background-color: #fcfcfc"
+            >
+              <div class="font-weight-bold text-v my-3 mx-3">Details</div>
+
+              <div class="dropdown-divider m-0 border-default mb-3"></div>
+
+              <div class="flex overflow-auto px-3">
+                <div class="text-iv font-weight-semi-bold py-1">
+                  <span class="gray--text">Name:</span>
+                  <span class="mediumgray--text">Visitor Name</span>
+                </div>
+                <div class="text-iv font-weight-semi-bold py-1">
+                  <span class="gray--text">Location:</span>
+                  <span class="mediumgray--text">Vietnam</span>
+                </div>
+                <div class="text-iv font-weight-semi-bold py-1">
+                  <span class="gray--text">Email:</span>
+                  <span class="mediumgray--text">guest@gmail.com</span>
+                </div>
+                <div class="text-iv font-weight-semi-bold py-1">
+                  <span class="gray--text">Phone:</span>
+                  <span class="mediumgray--text">--</span>
+                </div>
+                <div class="text-iv font-weight-semi-bold py-1">
+                  <span class="gray--text">Chat ID:</span>
+                  <span class="mediumgray--text">0123456789</span>
+                </div>
+                <div class="text-iv font-weight-semi-bold py-1">
+                  <span class="gray--text">Customer IP:</span>
+                  <span class="mediumgray--text">192.132.124.1</span>
+                </div>
+
+                <div class="text-iv font-weight-semi-bold py-4">
+                  <span class="gray--text">Noted:</span>
+                  <span class="mediumgray--text"
+                    >Modo diam ferri te pro, ex graece petentium usu. Eam ut
+                    tincidunt contentiones.</span
+                  >
+                  <span class="primary--text">Edit Note</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- End Details View -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  .application_wrap {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    position: relative;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    max-width: 100%;
+    -webkit-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .main_wrap {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    max-width: 100%;
+    position: relative;
+  }
+  .fill-height {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .full-height {
+    height: 100%;
+  }
+  .layout {
+    height: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    min-width: 0;
+  }
+  .layout.column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .layout.column .flex {
+    max-width: 100%;
+  }
+  .overflow-auto {
+    overflow-y: auto !important;
+  }
+  .flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+  .rooms_container {
+    max-width: 23%;
+    height: calc(100vh - 0px) !important;
+    border-right: 1px solid #ebecef;
+  }
+  .chatview_container {
+    max-width: 54%;
+    height: calc(100vh - 0px) !important;
+    border-right: 1px solid #ebecef;
+  }
+  .details_container {
+    max-width: 23%;
+    height: calc(100vh - 0px) !important;
+  }
+  .chatview_container ul li {
+    display: inline-block;
+    clear: both;
+    float: left;
+    margin: 15px 0 5px 0;
+    width: calc(100% - 25px);
+    font-size: 0.9em;
+    position: relative;
+  }
+  .chatview_container ul li.me img {
+    margin: 6px 8px 0 0;
+  }
+  .chatview_container ul li.me p {
+    background-color: #4db7a1;
+    color: white;
+  }
+  .chatview_container ul li.notme p {
+    background-color: #f2f2f2;
+  }
+  .chatview_container ul li img {
+    width: 30px;
+    border-radius: 50%;
+    float: left;
+    bottom: 17px;
+    left: 4px;
+    position: absolute;
+  }
+
+  .chatview_container ul li p {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 80%;
+    line-height: 130%;
+  }
+
+  .chatallfield_container.active {
+    box-shadow: 0px 0px 3px 1px #4db7a1;
+  }
+</style>
+
+<script>
+  $(document).ready(() => {
+    $(".chatview_container .chats_container").scrollTop($(document).height());
+  });
+
+  $(".dropdown-menu a ").click(() => {
+    $(this).parents(".input-group-btn").find(".btn").text($(this).text());
+  });
+
+  $(".chatfield_container")
+    .focus(() => {
+      $(".chatallfield_container").addClass("active");
+    })
+    .blur(() => {
+      $(".chatallfield_container").removeClass("active");
+    });
+</script>
