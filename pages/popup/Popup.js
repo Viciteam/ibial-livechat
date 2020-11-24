@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
 	const ratingResultContent = document.getElementById('ratingResultContent');
 	const ratingResult = document.getElementById('ratingResult');
 	const commentRating = document.getElementById('commentRating');
+	const commentText = document.getElementById('commentText');
 	ratingModal.addEventListener('click', () => {
 		chatRating.classList.remove('hide');
 		chatEmpty.classList.add('hide');
@@ -98,6 +99,12 @@ document.addEventListener('DOMContentLoaded', function(e) {
 		ratingResultContent.classList.remove('hide');
 		commentRating.innerHTML = document.getElementById('commentArea').value;
 		ratingResult.innerHTML = rating;
+		console.log(document.getElementById('commentArea').value);
+		if(document.getElementById('commentArea').value === ''){
+			commentText.classList.add('hide');
+		}else {
+			commentText.classList.remove('hide');
+		}
 	});
 
 
