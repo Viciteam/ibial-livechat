@@ -68,7 +68,8 @@ body {
 .chat-widget-interface {
     width: 400px;
     position: fixed;
-	bottom: 10px;
+    bottom: 10px;
+    height: 624px;
     right: 45px;
     border: 1px solid #a0a8b070;
     padding: 0px 15px;
@@ -77,6 +78,10 @@ body {
     display: none;
 }
 
+.popup-footer {
+    position: absolute;
+    bottom: 0;
+}
 .interface--header {
     padding: 10px;
     border-radius: 15px 15px 0px 0px;
@@ -85,6 +90,7 @@ body {
 .input-fields {
     border-top: 1px solid lightgrey;
     background-color: #FCFCFC;
+    width: 398px;
 }
 
 .text-smaller {
@@ -93,7 +99,6 @@ body {
 
 .chat-container {
     padding: 10px;
-    max-height: 300px;
 }
 
 .chat-container--empty {
@@ -214,4 +219,20 @@ body {
 .comment-rating {
     font-style: italic;
     font-weight: bold;
+}
+
+.send-feedback-input {
+    width: 100%;
+}
+
+.rating-result-content {
+    width: 300px;
+}
+
+.chat-rating {
+    width: 100%;
+    right: 0px;
+    position: absolute;
+    bottom: 125px;
+    background: #ffffff;
 }

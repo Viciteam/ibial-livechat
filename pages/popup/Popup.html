@@ -217,21 +217,18 @@
                     Hello I’m looking for a different product
                 </div>
             </div>
-        </div>
-        <div class="chat-container--empty" id="chatEmpty"></div>
-
         <!------ Rating Popup ------->
-        <div class="chat-rating text-smaller hide mt-3" id="chatRating">
+        <div class="chat-rating text-smaller hide mt-3 mx-auto pt-3" id="chatRating">
             <div class="text--center pb-3">
                 <span class="grey--text">You have closed the chat</span>
             </div>
             <div class="text--center white--text primary mx-auto star-rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
             </div>
-            <div class="rating-result-content text--center hide" id="ratingResultContent">
-                <span>You rated this conversation as <span class="rating-result bold" id="ratingResult">Good</span>
+            <div class="rating-result-content mx-auto text--center hide" id="ratingResultContent">
+                <p>You rated this conversation as <span class="rating-result bold" id="ratingResult">Good</span>
                 <span id="commentText">and left a comment: <span class="comment-rating" id="commentRating">This app is nice!</span> </span>
-                </span>
+                </p>
             </div>
             <div class="feedback-btn" id="feedbackBtn">
                 <div class="text--center">
@@ -251,29 +248,31 @@
             </div>
         </div>
 
-
+    </div>
         <!---------  -->
-        <div class="row input-fields mt-3">
-            <div class="col-1">
-                <img src="img/Icon.png" class="pt-3"/> 
+        <div class="popup-footer">
+            <div class="row input-fields mt-3">
+                <div class="col-1">
+                    <img src="img/Icon.png" class="pt-3"/> 
+                </div>
+                <div class="col-8 pl-1 mt-1">
+                    <input type="text" placeholder="Type your message..." name="message" class="text-field text-smaller" />
+                </div>
+                <div class="col-1 pl-1 icons">
+                    <img src="img/Shape.png" class="pt-3" width="15"/> 
+                </div>
+                <div class="col-1 pl-1 icons">
+                    <img src="img/mic.png" class="pt-3" width="15"/> 
+                </div>
+                <div class="col-1 pl-1 icons record-alt">
+                    <div>Record Screen/Video</div>
+                    <a href="" data-toggle="modal" data-target="#record-modal"><img src="img/Record Screen.png" class="pt-3" width="15"/></a>
+                </div>
             </div>
-            <div class="col-8 pl-1 mt-1">
-                <input type="text" placeholder="Type your message..." name="message" class="text-field text-smaller" />
+            <div class="popup-interface-footer text-smaller">
+                <span class="footer-text">Powered by</span>&nbsp;
+                <span class="footer-title">IBIAL WP CHAT</span>
             </div>
-            <div class="col-1 pl-1 icons">
-                <img src="img/Shape.png" class="pt-3" width="15"/> 
-            </div>
-            <div class="col-1 pl-1 icons">
-                <img src="img/mic.png" class="pt-3" width="15"/> 
-            </div>
-            <div class="col-1 pl-1 icons record-alt">
-                <div>Record Screen/Video</div>
-                <a href="" data-toggle="modal" data-target="#record-modal"><img src="img/Record Screen.png" class="pt-3" width="15"/></a>
-            </div>
-        </div>
-        <div class="popup-interface-footer text-smaller">
-            <span class="footer-text">Powered by</span>&nbsp;
-            <span class="footer-title">IBIAL WP CHAT</span>
         </div>
       </div>
 
