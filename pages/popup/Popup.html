@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./Popup.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Popup.js"></script>
+  </head>
+  <style>
+      .record-alt div{
+          position: absolute;
+          left: -96px;
+          font-size: 10px;
+          background: #000;
+          color: #fff;
+          padding: 5px 10px;
+          border-radius: 5px;
+          top: -15px;
+          display: none;
+      }
+      .record-alt{
+          position: relative;
+      }
+      .record-alt:hover div{
+          display: inline-block;
+      }
+      ul.record-tabs li {
+          flex: 1;
+          text-align: center;
+      }
+      ul.record-tabs li a.active {
+          color: #000;
+          border-bottom: 2px solid #000;
+          font-weight: bold;
+      }
+      ul.record-tabs li a {
+          color: #596365;
+          border-bottom: 2px solid #0000;
+      }
+      .tab-content{
+          border: solid 1px #ccc;
+          padding: 20px;
+          margin-top: -16px;
+          min-height: 300px;
+      }
+      .col-md-4.selection-items {
+          text-align: center;
+          color: #596365;
+      }
+      .col-md-4.selection-items span {
+          width: 100%;
+          height: 140px;
+          display: inline-block;
+          background: #ccc;
+      }
+      #record-modal .modal-footer {
+          border: none !important;
+          display: inline-block !important;
+          text-align: right;
+          width: 100%;
+
+      }
+      #record-modal .modal-header {
+          border: none !important;
+      }
+      .record-btn {
+          background: #fff;
+          border: 1px solid #ccc;
+          color: #596365;
+          border-radius: 20px;
+      }
+      .btn-green{
+          border-radius: 20px;
+          background: #4db7a1;
+          color: #fff;
+          padding: 6px 40px !important;
+          width: auto;
+      }
+      .options-grp{
+          margin-top: 20px;
+      }
+      .options-grp span{
+          width: 100%;
+          display: inline-block;
+          color: #596365;
+      }
+      .options-grp span input{
+          margin-right: 5px;
+          width: 22px;
+          height: 22px;
+          vertical-align: middle;
+      }
+
+      input[type="checkbox"] {
+          cursor: pointer;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          outline: 0;
+          background: #fff;
+          height: 16px;
+          width: 16px;
+          border: 1px solid #ccc;
+      }
+
+      input[type="checkbox"]:checked {
+          background: #4db7a1;
+          border: none;
+      }
+
+      input[type="checkbox"]:hover {
+          filter: brightness(100%);
+      }
+
+      input[type="checkbox"]:disabled {
+          background: #e6e6e6;
+          opacity: 0.6;
+          pointer-events: none;
+      }
+
+      input[type="checkbox"]:after {
+          content: '';
+          position: relative;
+          left: 40%;
+          top: 12%;
+          width: 26%;
+          height: 58%;
+          border: solid #fff;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+          display: none;
+      }
+
+      input[type="checkbox"]:checked:after {
+          display: block;
+      }
+
+      input[type="checkbox"]:disabled:after {
+          border-color: #7b7b7b;
+      }
+  </style>
+  <body>
+      <div class="popup-interface">
+        <button
+            class="btn primary-gradient dropdown-none btn-md popup-interface-btn px-5 font-weight-semi-bold"
+            type="button"
+            id="popup-interface-btn"
+        >
+            <img src="img/chat_bubble.png" width="30"/>
+            <span class="white--text pl-2">Chat with us! We're online.</span>
+      </button>
+      </div>
+
+      <div class="chat-widget-interface" id="chat-widget-interface">
+        <div class="interface--header row primary-gradient">
+            <div class="col-2">
+                <img src="img/Avatar.png" class="pt-2" width="30"/>
+            </div>
+            <div class="col-6">
+                <span class="white--text agent-name row">Agent Name</span>
+                <span class="white--text text-smaller row">Job Title</span>
+            </div>
+            <div class="col-4 pr-0 text--right">
+                <button id="toggleChatOptions" type="button" class="btn dropbtn transparent white--text">
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </button>
+                <div id="chatOptions" class="chat-dropdown-options">
+                    <a href="#" class="text-smaller" data-toggle="modal" data-target="#modalSendTranscript">Send transcript to email</a>
+                    <a href="#" id="toggleMute" class="text-smaller">Mute</a>
+                    <a href="#" class="text-smaller"  data-toggle="modal" data-target="#confirmClose">Close this chat session</a>
+                </div>
+                <button type="button" class="btn transparent white--text" id="hide-btn">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <!---------  -->
+        <div class="chat-container row">
+            <div class="row user-details">
+                <div class="col-2 user-avatar">
+                    <img src="img/Avatar.png" class="pt-2" width="30"/>
+                </div>
+                <div class="col-10 user-message text-smaller py-2 mt-2">
+                    Hello! How can I help you today?
+                </div>
+            </div>
+            <div class="row agent-details">
+                <div class="col-5"></div>
+                <div class="col-7 agent-message primary text-smaller white--text py-2 mt-3">
+                    Hello I’m looking for a different product
+                </div>
+            </div>
+        <!------ Rating Popup ------->
+        <div class="chat-rating text-smaller hide mt-3 mx-auto pt-3" id="chatRating">
+            <div class="text--center pb-3">
+                <span class="grey--text">You have closed the chat</span>
+            </div>
+            <div class="text--center white--text primary mx-auto star-rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="rating-result-content mx-auto text--center hide" id="ratingResultContent">
+                <p>You rated this conversation as <span class="rating-result bold" id="ratingResult">Good</span>
+                <span id="commentText">and left a comment: <span class="comment-rating" id="commentRating">This app is nice!</span> </span>
+                </p>
+            </div>
+            <div class="feedback-btn" id="feedbackBtn">
+                <div class="text--center">
+                    <p class="mt-3 text--center">How would you rate this chat?</p>
+                    <button type="button" class="btn rating-btn" id="like-button">
+                        <i class="far fa-thumbs-up"></i>
+                    </button>
+                    <button type="button" class="btn rating-btn" id="dislike-button">
+                        <i class="far fa-thumbs-down"></i>
+                    </button>
+                </div>
+                <div class="rating-feedback mt-3 mx-auto" id="ratingFeedback">
+                    <p>Feel free to give us some feedback below:</p>
+                    <input type="text" class="py-2 px-3 mb-3 send-feedback-input" id="commentArea" />
+                    <button type="button" id="submitRating" class="btn primary white--text submit-rating-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <!---------  -->
+        <div class="popup-footer">
+            <div class="row input-fields mt-3">
+                <div class="col-1">
+                    <img src="img/Icon.png" class="pt-3"/> 
+                </div>
+                <div class="col-8 pl-1 mt-1">
+                    <input type="text" placeholder="Type your message..." name="message" class="text-field text-smaller" />
+                </div>
+                <div class="col-1 pl-1 icons">
+                    <img src="img/Shape.png" class="pt-3" width="15"/> 
+                </div>
+                <div class="col-1 pl-1 icons">
+                    <img src="img/mic.png" class="pt-3" width="15"/> 
+                </div>
+                <div class="col-1 pl-1 icons record-alt">
+                    <div>Record Screen/Video</div>
+                    <a href="" data-toggle="modal" data-target="#record-modal"><img src="img/Record Screen.png" class="pt-3" width="15"/></a>
+                </div>
+            </div>
+            <div class="popup-interface-footer text-smaller">
+                <span class="footer-text">Powered by</span>&nbsp;
+                <span class="footer-title">IBIAL WP CHAT</span>
+            </div>
+        </div>
+      </div>
+
+      <!-- Modal for Send transcript to email-->
+    <div class="modal fade" id="modalSendTranscript" role="dialog">
+        <div class="modal-dialog modal-send-transcript">
+        
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title mx-auto">Send the chat transcript to:</h5>
+            </div>
+            <div class="modal-body mx-auto">
+                <input type="text" class="py-2 px-3 send-chat-input" placeholder="email@sample.com"/>
+            </div>
+            <div class="modal-footer mx-auto">
+                <button type="button" class="btn btn-default modal-btn" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn primary white--text modal-btn" data-dismiss="modal">Send</button>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <!-- Confirm Modal for Closing the chat -->
+    <div class="modal fade" id="confirmClose" role="dialog">
+        <div class="modal-dialog modal-send-transcript">
+        
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+            <h6 class="modal-title mx-auto text--center">Are you sure you want to close this chat session?</h6>
+            </div>
+            <div class="modal-footer mx-auto">
+                <button type="button" class="btn btn-default modal-btn" data-dismiss="modal">Cancel</button>
+                <button type="button" id="showRatingModal" class="btn btn-danger white--text modal-btn" data-dismiss="modal">Close chat</button>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <div class="modal fade" id="record-modal" role="dialog">
+          <div class="modal-dialog modal-lg">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                     Record
+                  </div>
+                  <div class="modal-body">
+                      <ul class="nav record-tabs mb-3" id="pills-tab" role="tablist">
+                          <li class="nav-item">
+                              <a class="nav-link active" id="pills-es-tab" data-toggle="pill" href="#pills-es" role="tab" aria-controls="pills-es" aria-selected="true">Entire Screen</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" id="pills-bt-tab" data-toggle="pill" href="#pills-bt" role="tab" aria-controls="pills-bt" aria-selected="false">Browser Tab</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" id="pills-aw-tab" data-toggle="pill" href="#pills-aw" role="tab" aria-controls="pills-aw" aria-selected="false">Application Window</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" id="pills-co-tab" data-toggle="pill" href="#pills-co" role="tab" aria-controls="pills-co" aria-selected="false">Camera Only</a>
+                          </li>
+                      </ul>
+                      <div class="tab-content tab-content" id="pills-tabContent">
+                          <div class="tab-pane fade show active" id="pills-es" role="tabpanel" aria-labelledby="pills-home-tab">1</div>
+                          <div class="tab-pane fade" id="pills-bt" role="tabpanel" aria-labelledby="pills-profile-tab">
+                              <div class="row">
+                                  <div class="col-md-4 selection-items"><span></span><label>Screen 1</label></div>
+                                  <div class="col-md-4 selection-items"><span></span><label>Screen 2</label></div>
+                                  <div class="col-md-4 selection-items"></div>
+                              </div>
+                          </div>
+                          <div class="tab-pane fade" id="pills-aw" role="tabpanel" aria-labelledby="pills-contact-tab">3</div>
+                          <div class="tab-pane fade" id="pills-co" role="tabpanel" aria-labelledby="pills-contact-tab">4</div>
+                      </div>
+
+                      <div class="options-grp">
+                          <span><input type="checkbox" name="options" id="mic-audio" value="1"/> Microphone Audio</span>
+                          <span><input type="checkbox" name="options" id="embed-camera" value="2"/> Embed Camera</span>
+                      </div>
+
+
+
+                  </div>
+
+                  <div class="modal-footer mx-auto record-button text-right">
+                      <button type="button" class="btn btn-default modal-btn record-btn" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn modal-btn btn-green" data-dismiss="modal">Start Recording</button>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+  </body>
+</html>
