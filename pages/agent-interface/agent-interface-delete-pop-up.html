@@ -16,127 +16,65 @@
     />
   </head>
   <style>
-    #pop-up-green .modal-dialog {
-      width: 480px; /* New width for default modal */
-      height: 354px; /* New width for default modal */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    .container{
+      font-family: 'Poppins', sans-serif;
     }
-    .modal-body{
-      margin: auto;
+    #delete-agent .modal-dialog {
+      width: 400px; /* New width for default modal */
+      height: 219px; /* New width for default modal */
+    }
+    #delete-agent .modal-header {
+      border: none !important;
+      justify-content: center;
+      padding-top: 25px !important;
+    }
+    #delete-agent .modal-body {
+      margin-top: -15px;
+    }
+    #delete-agent .modal-body span{
+      display: inline-block;
       width: 100%;
       text-align: center;
     }
-    #pop-up-green .modal-body span{
-      width: 100%;
-      display: inline-block;
-      color:#fff;
-    }
-    .modal-body .first-line{
-      margin-top: 15px;
-    }
-    #pop-up-green .modal-header {
+    #delete-agent .modal-footer {
+      justify-content: center;
       border: none !important;
     }
-    #pop-up-green .modal-body .change-plan{
-      margin-top: 20px;
-      color: #35A38D;
+    #delete-agent .modal-footer button{
       border-radius: 25px;
-      padding: 10px 20px;
-    }
-    #pop-up-green .modal-footer {
-      border: none !important;
-      justify-content: center !important;
-    }
-    #pop-up-green .modal-footer button{
-      margin-top: -15px;
-      padding-bottom: 12px;
-      background: none;
-      color: #fff;
-    }
-    #pop-up-green .modal-content{
-      background-image: linear-gradient(to right, #4DB7A1, #35A38D);
-    }
-
-    #pop-up-white .modal-dialog {
-      width: 480px; /* New width for default modal */
-      height: 354px; /* New width for default modal */
-    }
-    #pop-up-white .modal-header {
-      border: none !important;
-    }
-    #pop-up-white .modal-body .change-plan{
-      margin-top: 20px;
-      background: #35A38D;
-      border-radius: 25px;
-      padding: 10px 20px;
-      color: #FFF;
-    }
-    #pop-up-white .modal-content{
-      color: #596366;
-    }
-    #pop-up-white .modal-body span{
-      width: 100%;
-      display: inline-block;
-      color:#596366;
-    }
-    #pop-up-white .modal-footer {
-      border: none !important;
-      justify-content: center !important;
-    }
-    #pop-up-white .modal-footer button{
-      margin-top: -15px;
-      padding-bottom: 12px;
-      background: none;
-      color: #596366;
+      width: 130px;
+      height: 40px;
     }
   </style>
   <body>
+  <div class="container">
     <br />
-    <p><a href="" data-toggle="modal" data-target="#pop-up-green">Free Pop Up Green Background</a></p>
-    <p><a href="" data-toggle="modal" data-target="#pop-up-white">Free Pop Up White Background</a></p>
-    <div class="modal fade" id="pop-up-green" role="dialog">
-      <div class="modal-dialog modal-lg">
+    <p><a href="" data-toggle="modal" data-target="#delete-agent">Delete Agent</a></p>
+
+    <div class="modal fade" id="delete-agent" role="dialog">
+      <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-
+            <h4>Delete agent?</h4>
           </div>
           <div class="modal-body">
-            <img id="lock-white" src="./img/lock-white.png">
-            <span class="first-line">This feature is not available in your plan.</span>
-            <span>Upgrade to unlock more features.</span>
-            <button type="button" class="btn change-plan">Change Plan</button>
+            <span>This will delete their profile and remove their</span>
+            <span>access to WP Chat, but all archived chat data</span>
+            <span>will remain.</span>
           </div>
 
           <div class="modal-footer">
-
-            <button type="button" class="btn cancel-pop-up" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn cancel-delete-agent" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-delete-agent btn-danger">Delete</button>
           </div>
         </div>
 
       </div>
     </div>
-    <div class="modal fade" id="pop-up-white" role="dialog">
-      <div class="modal-dialog modal-lg">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-
-          </div>
-          <div class="modal-body">
-            <img id="lock-green" src="./img/lock-gray.png">
-            <span class="first-line">This feature is not available in your plan.</span>
-            <span>Upgrade to unlock more features.</span>
-            <button type="button" class="btn change-plan">Change Plan</button>
-          </div>
-
-          <div class="modal-footer">
-
-            <button type="button" class="btn cancel-pop-up" data-dismiss="modal">Cancel</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
+  </div>
+    
   </body>
 
 </html>
