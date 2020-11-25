@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./agent-interface.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    #pop-up-green .modal-dialog {
+      width: 480px; /* New width for default modal */
+      height: 354px; /* New width for default modal */
+    }
+    .modal-body{
+      margin: auto;
+      width: 100%;
+      text-align: center;
+    }
+    #pop-up-green .modal-body span{
+      width: 100%;
+      display: inline-block;
+      color:#fff;
+    }
+    .modal-body .first-line{
+      margin-top: 15px;
+    }
+    #pop-up-green .modal-header {
+      border: none !important;
+    }
+    #pop-up-green .modal-body .change-plan{
+      margin-top: 20px;
+      color: #35A38D;
+      border-radius: 25px;
+      padding: 10px 20px;
+    }
+    #pop-up-green .modal-footer {
+      border: none !important;
+      justify-content: center !important;
+    }
+    #pop-up-green .modal-footer button{
+      margin-top: -15px;
+      padding-bottom: 12px;
+      background: none;
+      color: #fff;
+    }
+    #pop-up-green .modal-content{
+      background-image: linear-gradient(to right, #4DB7A1, #35A38D);
+    }
+
+    #pop-up-white .modal-dialog {
+      width: 480px; /* New width for default modal */
+      height: 354px; /* New width for default modal */
+    }
+    #pop-up-white .modal-header {
+      border: none !important;
+    }
+    #pop-up-white .modal-body .change-plan{
+      margin-top: 20px;
+      background: #35A38D;
+      border-radius: 25px;
+      padding: 10px 20px;
+      color: #FFF;
+    }
+    #pop-up-white .modal-content{
+      color: #596366;
+    }
+    #pop-up-white .modal-body span{
+      width: 100%;
+      display: inline-block;
+      color:#596366;
+    }
+    #pop-up-white .modal-footer {
+      border: none !important;
+      justify-content: center !important;
+    }
+    #pop-up-white .modal-footer button{
+      margin-top: -15px;
+      padding-bottom: 12px;
+      background: none;
+      color: #596366;
+    }
+  </style>
+  <body>
+    <br />
+    <p><a href="" data-toggle="modal" data-target="#pop-up-green">Free Pop Up Green Background</a></p>
+    <p><a href="" data-toggle="modal" data-target="#pop-up-white">Free Pop Up White Background</a></p>
+    <div class="modal fade" id="pop-up-green" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+
+          </div>
+          <div class="modal-body">
+            <img id="lock-white" src="./img/lock-white.png">
+            <span class="first-line">This feature is not available in your plan.</span>
+            <span>Upgrade to unlock more features.</span>
+            <button type="button" class="btn change-plan">Change Plan</button>
+          </div>
+
+          <div class="modal-footer">
+
+            <button type="button" class="btn cancel-pop-up" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="modal fade" id="pop-up-white" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+
+          </div>
+          <div class="modal-body">
+            <img id="lock-green" src="./img/lock-gray.png">
+            <span class="first-line">This feature is not available in your plan.</span>
+            <span>Upgrade to unlock more features.</span>
+            <button type="button" class="btn change-plan">Change Plan</button>
+          </div>
+
+          <div class="modal-footer">
+
+            <button type="button" class="btn cancel-pop-up" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+
+</html>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script>
+<script>
+
+</script>
