@@ -35,23 +35,16 @@
   </head>
   <body>
 
+        
     <!--- Header  -->
-    <div class="row px-3 py-3">
-        <div class="col-3">
-            <span class="settings-panel bold">Settings</span>
-        </div>
-        <div class="col-6">
-            <span class="settings-panel bold" id="panel-name">Chat Widget</span>
-        </div>
-        <div class="col-3">
-            <span class="settings-panel bold">Preview</span>
-        </div>
-    </div>
 
     <div class="row px-3">
 
         <!---- Sidebar Menu ------->
-        <div class="col-3 px-0">
+        <div class="col-3 px-0 settings-container">
+            <div class="col-3 py-3">
+                <span class="settings-panel bold">Settings</span>
+            </div>
             <div class="tab-settings">
                 <button class="tablinks" id="chatActivitySettings">Chat Activity</button>
                 <button class="tablinks chat-widget-btn" id="chatWidgetSettings">Chat Widget</button>
@@ -67,9 +60,14 @@
 
         <!-----  Body COntent  ------->
 
-        <div class="col-6 px-0">
+        <div class="col-6 px-0 chat-container-settings">
 
             <!-------Chat Activity Settings ---->
+            <div class="col-6 py-3">
+                <span class="settings-panel bold" id="panel-name">Chat Widget</span>
+            </div>
+
+
             <div id="chatActivity" class="tabcontent chatActivitySettings py-3 px-3">
                 <span class="bold fontsize-14">Customization</span>
             </div>
@@ -338,7 +336,10 @@
         <!------- Preview Content------->
 
 
-        <div class="col-3 preview-content">
+        <div class="col-3 preview-content preview-container">
+            <div class="col-3 py-3">
+                <span class="settings-panel bold">Preview</span>
+            </div>
             <div class="preview-img" id="preview--img">
                 <img src="./img/bubble_logo.png" width="60px" id="preview--bubble" class="preview--logo hide"/>
                 <img src="./img/Chat Bar preview.png" id="preview--bar" class="preview--logo"/>
