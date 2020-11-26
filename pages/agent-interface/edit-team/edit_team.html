@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>Edit team</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+        background-color: #d7d7d7;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    #edit-team-card {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #edit-team-card .card-header{
+        background-color: white;
+    }
+
+    #edit-team-card .input-group-text {
+        background-color: #FCFCFC;
+    }
+
+    #edit-team-card .card-body.card-body-first {
+        background-color: #f8f8f8;
+    }
+
+    #edit-team-card .input-group-prepend {
+        border-left: 1px solid #ced4da;
+        border-radius: .25rem;
+    }
+
+    #edit-team-card label[for="edit-team-search"] {
+        font-weight: 600;
+    }
+
+    #edit-team-card #edit-team-search {
+        border-left: 0;
+    }
+
+    #edit-team-card .avatar-icon {
+        max-width: 40px;
+    }
+
+    #edit-team-card ul li.list-group-item {
+        padding: .75rem;
+    }
+
+    #edit-team-card ul input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    #edit-team-card ul .edit-team-name {
+        color: #4F4F4F;
+    }
+
+    #edit-team-card ul .edit-team-email {
+        color: #BDBDBD;
+    }
+
+    #edit-team-card .card-footer #edit-team-delete{
+        text-decoration: none;
+    }
+
+    #edit-team-card .card-footer .btn-action {
+        padding: 10px, 24px, 10px, 24px;
+        border-radius: 40px;
+        border: 1px solid #DFDFE1;
+        font-weight: 600;
+        height: 40px;
+    }
+
+    #edit-team-card .card-footer .btn-action-cancel {
+        background-color: #FFFFFF;
+        color: #596366;
+        width: 101px;
+    }
+
+    #edit-team-card .card-footer .btn-action-save {
+        background-color: #4DB7A1;
+        color: white;
+        width: 85px;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="card" id="edit-team-card" style="width: 540px;">
+                <div class="card-header">
+                    <h5 class="card-title">Edit team</h5>
+                </div>
+                <div class="card-body card-body-first">
+                    <label for="edit-team-sale"><small>Team name</small></label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="edit-team-sales" id="edit-team-sale"
+                            aria-describedby="sales" placeholder="Sales">
+                    </div>
+
+                    <label for="edit-team-search">Members (2)</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="edit-team-search"> <i class="fa fa-search"></i> </span>
+                        </div>
+                        <input type="text" class="form-control" name="edit-team-search" id="edit-team-search"
+                            aria-describedby="search" placeholder="Search">
+                    </div>
+                </div> <!-- end .card-body -->
+
+                <div class="card-body mt-n3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input mr-3" type="checkbox" value="option1">
+                                <img class="rounded avatar-icon  mr-3" src="images/avatar_icon.png" draggable="false"
+                                    alt="Avatar Icon">
+                                <span class="d-block edit-team-name">Angela <small
+                                        class="d-block edit-team-email">Angela@company.com</small> </span>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input mr-3" type="checkbox" value="option1">
+                                <img class="rounded avatar-icon  mr-3" src="images/avatar_icon.png" draggable="false"
+                                    alt="Avatar Icon">
+                                <span class="d-block edit-team-name">Angela <small
+                                        class="d-block edit-team-email">Angela@company.com</small> </span>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input mr-3" type="checkbox" value="option1">
+                                <img class="rounded avatar-icon  mr-3" src="images/avatar_icon.png" draggable="false"
+                                    alt="Avatar Icon">
+                                <span class="d-block edit-team-name">Angela <small
+                                        class="d-block edit-team-email">Angela@company.com</small> </span>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input mr-3" type="checkbox" value="option1">
+                                <img class="rounded avatar-icon  mr-3" src="images/avatar_icon.png" draggable="false"
+                                    alt="Avatar Icon">
+                                <span class="d-block edit-team-name">Angela <small
+                                        class="d-block edit-team-email">Angela@company.com</small> </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div> <!-- end .card-body -->
+
+                <div class="card-footer bg-transparent border-default">
+                    <a href="javascript:void(0);" class="text-danger font-weight-bolder d-inline-block mt-2" id="edit-team-delete">Delete
+                        team</a>
+                    <div class="float-right">
+                        <a href="javascript:void(0);" class="btn btn-default btn-action btn-action-cancel" id="edit-team-cancel">Cancel</a>
+                        <a href="javascript:void(0);" class="btn btn-default btn-action btn-action-save" id="edit-team-save">Save</a>
+                    </div>
+                </div>
+
+            </div> <!-- end .card -->
+
+        </div> <!-- end .row -->
+    </div> <!-- end .container -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
