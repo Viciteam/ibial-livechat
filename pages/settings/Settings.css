@@ -1,0 +1,348 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.primary {
+    background-color: #4db7a1;
+}
+
+.primary--text {
+    color: #4db7a1;
+}
+
+
+.white--text {
+    color: #fff;
+  }
+
+.text--center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.settings-panel {
+    padding: 15px;
+    font-size: 14px;
+}
+
+.fontsize-14 {
+    font-size: 14px;
+}
+
+.fontsize-12 {
+    font-size: 12px;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.full-width {
+    width: 100%;
+}
+.tab-settings {
+    float: left;
+    border: 1px solid #ccc;
+    background-color:#FCFCFC;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+  
+  /* Style the buttons inside the tab */
+.tab-settings button,
+.chat-widget-settings button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.chat-widget-settings button {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 100%;
+    border-left: none;
+}
+
+.tab-settings button:hover {
+    background-color:#EBFAF8;
+    color: #4DB7A1;
+}
+  
+/* Create an active/current "tab button" class */
+.tab-settings button.active {
+    font-weight: bold;
+    color: #4DB7A1;
+}
+
+.active-menu {
+    background-color:#EBFAF8 !important;
+    color: #4DB7A1 !important;
+    border-right: 4px solid #4DB7A1 !important;
+}
+
+
+.chat-widget-dropdown a {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.chat-widget-dropdown a:hover {
+    color: #4DB7A1;
+    text-decoration: none;
+}
+
+.chat-widget-dropdown a.active {
+    color: #4DB7A1;
+    text-decoration: none;
+}
+
+.show {
+	display: block !important;
+}
+
+.hide {
+	display: none;
+}
+
+.toggle-widget-status,
+.toggle-agent-title,
+.toggle-agent-photo,
+.toggle-logo {
+    position: absolute;
+    right: 20px;
+}
+.customization-details,
+.advanced-details,
+.misc-details {
+    display: none;
+}
+
+/** toggle Button **/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:#4DB7A1;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px#4DB7A1;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /***----------***/
+  .color-picker {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  #favcolor {
+    width: 40px;
+    height: 40px;
+  }
+
+  .widget-code-copy {
+    position: relative;
+    float: right;
+    bottom: 45px;
+  }
+
+  .img_window,
+  .img_icon,
+  .add_icon {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .img_window:hover,
+  .img_icon:hover,
+  .add_icon:hover {
+      cursor: pointer;
+  }
+
+  #bubble_logo--active,
+  #chat_bar--active,
+  #hand--active,
+  #bubble_variant--active {
+      border: 2px solid #4DB7A1;
+  }
+
+  .add_icon {
+      width: 40px;
+      height: 40px;
+  }
+
+  .upload_logo_placeholder {
+    border: 2px solid #ccc;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .logo--text {
+    position: relative;
+    bottom: 25px;
+  }
+
+  .preview-img {
+    position: fixed;
+    bottom: 10px;
+    right: 35px;
+  }
+
+
+
+  /*** Preview Chat **/
+
+
+  .preview-content{
+    border-top: 1px solid #ccc;
+  }
+
+  .chat-widget-interface {
+    width: 315px;
+    position: fixed;
+    bottom: 10px;
+    height: 500px;
+    right: 10px;
+    border: 1px solid #a0a8b070;
+    padding: 0px 15px;
+    border-radius: 20px;
+    background-color: #FCFCFC;
+    display: none;
+}
+
+.interface--header {
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+.primary-gradient {
+    background: linear-gradient(270deg, #0D9689 -2.25%, #4DB7A1 101.5%);
+}
+
+.chat-container {
+    padding: 10px;
+}
+
+.user-message {
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.agent-message {
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.agent-details {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.popup-footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.text-field {
+    width: 100%;
+    padding: 15px;
+    border: 0px;
+    color: #A0A8B0;
+    font-size: 14px;
+}
+
+.popup-interface-footer {
+    text-align: center;
+    color: #A0A8B0;
+    padding: 10px;
+    background-color: #FCFCFC;
+}
+
+.footer-text {
+    font-size: 10px;
+}
+.footer-title {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+

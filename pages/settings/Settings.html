@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./Settings.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Settings.js"></script>
+  </head>
+  <body>
+
+    <!--- Header  -->
+    <div class="row px-3 py-3">
+        <div class="col-3">
+            <span class="settings-panel bold">Settings</span>
+        </div>
+        <div class="col-6">
+            <span class="settings-panel bold" id="panel-name">Chat Widget</span>
+        </div>
+        <div class="col-3">
+            <span class="settings-panel bold">Preview</span>
+        </div>
+    </div>
+
+    <div class="row px-3">
+
+        <!---- Sidebar Menu ------->
+        <div class="col-3 px-0">
+            <div class="tab-settings">
+                <button class="tablinks" id="chatActivitySettings">Chat Activity</button>
+                <button class="tablinks chat-widget-btn" id="chatWidgetSettings">Chat Widget</button>
+                    <div class="chat-widget-dropdown" id="chat-widget-submenus">
+                        <a href="#" class="chat-widget-submenu active-menu">Appearance</a>
+                        <a href="#" class="chat-widget-submenu">Text</a>
+                        <a href="#" class="chat-widget-submenu">Notifications & Visibility</a>
+                    </div>
+                <button class="tablinks" id="ratingSurveySettings">Rating & Surveys</button>
+                <button class="tablinks" id="bannedVisitorSettings">Banned Visitors</button>
+            </div>
+        </div>
+
+        <!-----  Body COntent  ------->
+
+        <div class="col-6 px-0">
+
+            <!-------Chat Activity Settings ---->
+            <div id="chatActivity" class="tabcontent chatActivitySettings py-3 px-3">
+                <span class="bold fontsize-14">Customization</span>
+            </div>
+
+            <!-------Chat Widget Settings ---->
+            <div id="chatWidget" class="tabcontent chatWidgetSettings py-0 px-0 show">
+
+                <!-------Chat Widget  Appearance Settings ---->
+
+                <div class="cw-submenu-title appearance-settings" id="appearance-settings">
+                    <div class="chat-widget-settings">
+
+                        <!---- Customization Button --->
+                        <button class="cw-expandable-btn bold" id="custom-btn">
+                            Customization
+                            <span class="toggle-widget-status" id="custom-arrow-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                            <span class="toggle-widget-status hide" id="custom-arrow-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                        </button>
+
+                        <!---- Customization Settings Details --->
+                        <div class="customization-details px-3 py-3" id="custom-details">
+                            <div class="widget-name">
+                                <p class="fontsize-12 mb-1">Widget Name</p>
+                                <input type="text" class="full-width py-2 px-2"/>
+                            </div>
+                            <div class="widget-status mt-3">
+                                <p class="fontsize-12 mb-1">Widget Status</p>
+                                <span class="fontsize-14 py-2 px-2" id="widget-status-text">Inactive</span>
+                                <span class="toggle-widget-status">
+                                    <label class="switch">
+                                        <input type="checkbox" id="widget-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="widget-code mt-3">
+                                <p class="fontsize-12 mb-1">Widget Code</p>
+                                <textarea class="full-width" rows="5"></textarea>
+                                <input type="button" class="btn primary white--text widget-code-copy" value="Copy" />
+                            </div>
+                            <div class="widget-color mt-3">
+                                <p class="fontsize-12 mb-1">Widget Color</p>
+                                <div class="color-picker">
+                                    <input type="color" id="favcolor" name="favcolor" value="#4DB7A1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!---- Advance Settings Button --->
+                        <button class="cw-expandable-btn bold" id="advance-btn">
+                            Advance Settings
+                            <span class="toggle-widget-status" id="advance-arrow-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                            <span class="toggle-widget-status hide" id="advance-arrow-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                        </button>
+
+                        <!---- Advance Settings Details --->
+                        <div class="advanced-details px-3 py-3" id="advance-details">
+                            <div class="minimize-window">
+                                <p class="fontsize-12 mb-1">Minimized Window</p>
+                                <div class="d-flex">
+                                    <div class="px-3 py-2">
+                                        <img src="./img/bubble_logo.png" width="80px" class="px-3 py-3 img_window hide" id="bubble_logo--active"/>
+                                        <img src="./img/bubble_logo_inactive.png" width="80px" class="px-3 py-3 img_window" id="bubble_logo--inactive"/>
+                                        <p class="text--center fontsize-12 mb-0">Bubble</p>
+                                    </div>
+                                    <div class="px-3 py-2">
+                                        <img src="./img/Chat Bar.png" width="80px" class="px-3 py-3 img_window" id="chat_bar--active"/>
+                                        <img src="./img/Chat Bar_inactive.png" width="80px" id="chat_bar--inactive" class="px-3 py-3 img_window hide"/>
+                                        <p class="text--center fontsize-12 mb-0">Bar</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="minimize-window mt-3">
+                                <p class="fontsize-12 mb-1">Chat Icon</p>
+                                <div class="d-flex">
+                                    <div class="pl-3 pr-1 py-2">
+                                        <img src="./img/hand.png" width="40px" class="hide img_icon" id="hand--active"/>
+                                        <img src="./img/hand_inactive.png" width="40px" class="img_icon" id="hand--inactive"/>
+                                    </div>
+                                    <div class="px-1 py-2">
+                                        <img src="./img/bubble_variant.png" width="40px" class="img_icon" id="bubble_variant--active"/>
+                                        <img src="./img/bubble_variant_inactive.png" width="40px" id="bubble_variant--inactive" class="hide img_icon"/>
+                                    </div>
+                                    <div class="px-1 py-2">
+                                        <div class="add_icon text--center pt-2">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!---- Miscellaneous Settings Button --->
+                        <button class="cw-expandable-btn bold" id="misc-btn">
+                            Miscellaneous
+                            <span class="toggle-widget-status" id="misc-arrow-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                            <span class="toggle-widget-status hide" id="misc-arrow-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                        </button>
+
+                         <!---- Miscellaneous Settings Details --->
+                        <div class="misc-details px-3 py-3" id="misc-details">
+                            <div class="agent-title-show mt-3">
+                                <span class="fontsize-14 py-2 px-2">Show agent's job title</span>
+                                <span class="toggle-agent-title">
+                                    <label class="switch">
+                                        <input type="checkbox" id="agent-title-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="agent-photo-show mt-4">
+                                <span class="fontsize-14 py-2 px-2">Show agent's photo</span>
+                                <span class="toggle-agent-photo">
+                                    <label class="switch">
+                                        <input type="checkbox" id="agent-photo-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="show-logo mt-4 px-2">
+                                <p class="fontsize-14 mb-1">Show logo</p>
+                                <span class="fontsize-14 mt-2 py-2 px-2 upload_logo_placeholder"></span>
+                                <span class="fontsize-14 py-2 px-2 logo--text">
+                                    <input type="button" class="btn primary--text" value="Upload logo"/>
+                                </span>
+                                <span class="toggle-logo">
+                                    <label class="switch">
+                                        <input type="checkbox" id="agent-logo">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-------Chat Widget Text Settings ---->
+
+                <div class="cw-submenu-title hide text-settings" id="text-settings">
+                    <div class="chat-widget-settings px-4 py-3">
+                        <div class="minimized-bar-text">
+                            <p class="fontsize-12 mb-1">Minimized bar text</p>
+                            <input type="text" class="full-width py-2 px-2"/>
+                        </div>
+                        <div class="offline-bar-text mt-3">
+                            <p class="fontsize-12 mb-1">Offline bar text</p>
+                            <input type="text" class="full-width py-2 px-2"/>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------Chat Widget Text Settings Details ---->
+
+                <div class="cw-submenu-title hide notif-settings" id="notif-settings">
+                    <div class="chat-widget-settings">
+                        
+                        <!-------Chat Widget Notifications Button ---->
+                        <button class="cw-expandable-btn bold" id="notif-btn">
+                            Notifications
+                            <span class="toggle-widget-status" id="notif-arrow-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                            <span class="toggle-widget-status hide" id="notif-arrow-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                        </button>
+
+                        <div class="notif-settings-details hide px-3">
+                            <div class="mt-3">
+                                <span class="fontsize-14 py-2 px-2">Enable sound notifications for visitors</span>
+                                <span class="toggle-agent-title">
+                                    <label class="switch">
+                                        <input type="checkbox" id="sound-notif-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="mt-3">
+                                <span class="fontsize-14 py-2 px-2">Disable message preview</span>
+                                <span class="toggle-agent-title">
+                                    <label class="switch">
+                                        <input type="checkbox" id="message-preview-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="mt-3">
+                                <span class="fontsize-14 py-2 px-2">Disable visitor typing function</span>
+                                <span class="toggle-agent-title">
+                                    <label class="switch">
+                                        <input type="checkbox" id="typing-function-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <button class="cw-expandable-btn bold" id="visibility-btn">
+                            Visibility
+                            <span class="toggle-widget-status" id="visibility-arrow-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                            <span class="toggle-widget-status hide" id="visibility-arrow-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                        </button>
+
+                        <div class="visibility-settings-details hide px-3">
+                            <div class="mt-3">
+                                <span class="fontsize-14 py-2 px-2">Hide widget when agents are offline</span>
+                                <span class="toggle-agent-title">
+                                    <label class="switch">
+                                        <input type="checkbox" id="hide-widget-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="mt-3">
+                                <span class="fontsize-14 py-2 px-2">Hide widget on mobile</span>
+                                <span class="toggle-agent-title">
+                                    <label class="switch">
+                                        <input type="checkbox" id="hide-mobile-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+
+                        <button class="cw-expandable-btn bold" id="avail-btn">
+                            Availability
+                            <span class="toggle-widget-status" id="avail-arrow-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                            <span class="toggle-widget-status hide" id="avail-arrow-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                        </button>
+
+                        <div class="avail-settings-details hide px-3 py-3">
+                            <div class="mt-3">
+                                <p class="fontsize-12 mb-1">Availability</p>
+                                <select name="avail" id="avail" class="full-width py-2 px-2">
+                                    <option value="">Mon - Sun (9am - 6pm)</option>
+                                </select>
+                            </div>
+                            <div class="mt-3">
+                                <p class="fontsize-12 mb-1">Timezone</p>
+                                <select name="avail" id="avail" class="full-width py-2 px-2">
+                                    <option value="">Singapore, UTC +08:00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            
+
+
+             <!-------Rating & Survey Settings ---->
+            <div id="ratingSurvey" class="tabcontent ratingSurveySettings py-3 px-3">
+                <span class="bold fontsize-14">Customization</span>
+            </div>
+
+
+
+             <!-------Banned Visitors Settings ---->
+            <div id="bannedVisitor" class="tabcontent bannedVisitorSettings py-3 px-3">
+                <span class="bold fontsize-14">Customization</span>
+            </div>
+        </div>
+
+
+
+        <!------- Preview Content------->
+
+
+        <div class="col-3 preview-content">
+            <div class="preview-img" id="preview--img">
+                <img src="./img/bubble_logo.png" width="60px" id="preview--bubble" class="preview--logo hide"/>
+                <img src="./img/Chat Bar preview.png" id="preview--bar" class="preview--logo"/>
+            </div>
+        </div>
+
+
+        <div class="chat-widget-interface" id="chat-widget-interface">
+            <div class="interface--header row primary-gradient">
+                <div class="col-2">
+                    <img src="img/Avatar.png" class="pt-2" width="30"/>
+                </div>
+                <div class="col-6">
+                    <span class="white--text agent-name row">Agent Name</span>
+                    <span class="white--text text-smaller row">Job Title</span>
+                </div>
+                <div class="col-4 pr-0 text--right">
+                    <button id="toggleChatOptions" type="button" class="btn dropbtn transparent white--text">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="btn transparent white--text" id="hide-btn">
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <!---------  -->
+            <div class="chat-container row">
+                <div class="row user-details">
+                    <div class="col-2 user-avatar">
+                        <img src="img/Avatar.png" class="pt-2" width="30"/>
+                    </div>
+                    <div class="col-10 user-message text-smaller py-2 mt-2">
+                        Hello! How can I help you today?
+                    </div>
+                </div>
+                <div class="row agent-details">
+                    <div class="col-5"></div>
+                    <div class="col-7 agent-message primary text-smaller white--text py-2 mt-3">
+                        Hello I’m looking for a different product
+                    </div>
+                </div>
+                
+        </div>
+            <!---------  -->
+            <div class="popup-footer">
+                <div class="row input-fields mt-3">
+                    <img src="./img/preview_input.png" width="313px"/>
+                </div>
+                <div class="popup-interface-footer text-smaller">
+                    <span class="footer-text">Powered by</span>&nbsp;
+                    <span class="footer-title">IBIAL WP CHAT</span>
+                </div>
+            </div>
+          </div>       
+    </div>
+
+  </body>
+</html>
