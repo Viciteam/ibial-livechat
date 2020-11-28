@@ -195,23 +195,31 @@ body {
 }
 
 .star-rating {
-    width: 30px;
-    padding: 5px;
+    position: relative;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
     border-radius: 20px;
-    margin-bottom: 10px;
 }
 .rating-btn {
-    font-size: 18px;
-    padding: 2px 7px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding: 4px;
     border-radius: 25px;
 }
 .rating-feedback {
     display: none;
-    width: 250px;
+    width: 320px;
     text-align: center;
+    margin-bottom: 25px;
+}
+.rating-feedback p {
+    width: 230px;
 }
 .submit-rating-btn {
-    width: 240px;
+    width: 100%;
 }
 .bold {
     font-weight: bold;
@@ -229,10 +237,19 @@ body {
     width: 300px;
 }
 
+.rating-details {
+    border: 1px solid #EBECEF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 0px 20px;
+}
+
 .chat-rating {
     width: 100%;
     right: 0px;
     position: absolute;
-    bottom: 125px;
+    bottom: 55px;
     background: #ffffff;
+    font-size: 14px;
+    z-index: 2;
 }

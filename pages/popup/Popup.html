@@ -219,31 +219,33 @@
             </div>
         <!------ Rating Popup ------->
         <div class="chat-rating text-smaller hide mt-3 mx-auto pt-3" id="chatRating">
-            <div class="text--center pb-3">
-                <span class="grey--text">You have closed the chat</span>
+            <div class="text--center pb-5 mb-3">
+                <span class="grey--text">You have closed the chat.</span>
             </div>
-            <div class="text--center white--text primary mx-auto star-rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <div class="rating-result-content mx-auto text--center hide" id="ratingResultContent">
-                <p>You rated this conversation as <span class="rating-result bold" id="ratingResult">Good</span>
-                <span id="commentText">and left a comment: <span class="comment-rating" id="commentRating">This app is nice!</span> </span>
-                </p>
-            </div>
-            <div class="feedback-btn" id="feedbackBtn">
-                <div class="text--center">
-                    <p class="mt-3 text--center">How would you rate this chat?</p>
-                    <button type="button" class="btn rating-btn" id="like-button">
-                        <i class="far fa-thumbs-up"></i>
-                    </button>
-                    <button type="button" class="btn rating-btn" id="dislike-button">
-                        <i class="far fa-thumbs-down"></i>
-                    </button>
+            <div class="rating-details">
+                <div class="text--center white--text primary mx-auto star-rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
                 </div>
-                <div class="rating-feedback mt-3 mx-auto" id="ratingFeedback">
-                    <p>Feel free to give us some feedback below:</p>
-                    <input type="text" class="py-2 px-3 mb-3 send-feedback-input" id="commentArea" />
-                    <button type="button" id="submitRating" class="btn primary white--text submit-rating-btn">Submit</button>
+                <div class="rating-result-content mx-auto text--center hide" id="ratingResultContent">
+                    <p>You rated this conversation as <span class="rating-result bold" id="ratingResult">Good</span>
+                    <span id="commentText">and left a comment: <span class="comment-rating" id="commentRating">This app is nice!</span> </span>
+                    </p>
+                </div>
+                <div class="feedback-btn" id="feedbackBtn">
+                    <div class="text--center mb-4">
+                        <p class="text--center">How would you rate this chat?</p>
+                        <button type="button" class="btn rating-btn" id="like-button">
+                            <i class="far fa-thumbs-up"></i>
+                        </button>&nbsp;&nbsp;
+                        <button type="button" class="btn rating-btn" id="dislike-button">
+                            <i class="far fa-thumbs-down"></i>
+                        </button>
+                    </div>
+                    <div class="rating-feedback mt-3 mx-auto" id="ratingFeedback">
+                        <p class="mx-auto">Feel free to give us some feedback below:</p>
+                        <input type="text" class="py-2 px-3 mb-3 send-feedback-input" id="commentArea" />
+                        <button type="button" id="submitRating" class="btn primary white--text submit-rating-btn">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
