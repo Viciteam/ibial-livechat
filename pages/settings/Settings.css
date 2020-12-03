@@ -351,3 +351,7 @@ input:checked + .slider:before {
 .w-60-px {
   width: 60px;
 }
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: white !important;
+  background-color: #4db7a1 !important;
+}
