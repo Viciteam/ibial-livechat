@@ -346,3 +346,8 @@ input:checked + .slider:before {
   font-weight: bold;
   letter-spacing: 2px;
 }
+
+/* Chat Activity */
+.w-60-px {
+  width: 60px;
+}
