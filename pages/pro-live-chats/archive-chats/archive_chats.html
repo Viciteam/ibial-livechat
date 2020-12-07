@@ -586,6 +586,9 @@
                   >
                     Custom Period
                   </button>
+                  <div class="mx-3 my-2">
+                    <input type="date"></input>
+                  </div>
                 </div>
               </div>
 
@@ -1032,12 +1035,14 @@
   $(".date-filters-dropdown button").on("click", function () {
     $(".date-filter .sub-filter-title").addClass("d-none");
     $(".date-filter .sub-filter-names").removeClass("d-none");
-
+    
+    $(".date-filter .dropdown-item").removeClass("active");
+    
     if (
       $(".date-filter .sub-filter-names")
-        .text()
-        .includes($(this).attr("data-id"))
-    ) {
+      .text()
+      .includes($(this).attr("data-id"))
+      ) {
       let remove = $(".date-filter .sub-filter-names")
         .text()
         .replace($(this).attr("data-id"), "");
@@ -1046,8 +1051,10 @@
     } else {
       $(".date-filter .sub-filter-names").text($(this).attr("data-id"));
     }
+    
+    $(this).toggleClass("active");
 
-    if ($(".date-filter .sub-filter-names").text() === " ") {
+    if ($(".date-filter .sub-filter-names").text() === "") {
       $(".date-filter .sub-filter-title").removeClass("d-none");
       $(".date-filter .sub-filter-names").addClass("d-none");
     }
