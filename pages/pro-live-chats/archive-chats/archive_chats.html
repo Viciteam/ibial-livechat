@@ -1113,16 +1113,24 @@
   // agent clear inputs
   $("#agentFilterDropdown .dropdown-item-remove").click(function (e) {
     e.preventDefault();
+    
+    $('.agent-filter').addClass('d-none')
+    
     $(".agent-filter .sub-filter-title").removeClass("d-none");
     $(".agent-filter .sub-filter-names").addClass("d-none");
 
     $(".agent-filter .sub-filter-names").text("");
 
     $(".agent-filter .dropdown-item").removeClass("active");
+
+    
   });
   // team clear inputs
   $("#teamFilterDropdown .dropdown-item-remove").click(function (e) {
     e.preventDefault();
+    
+    $('.team-filter').addClass('d-none')
+
     $(".team-filter .sub-filter-title").removeClass("d-none");
     $(".team-filter .sub-filter-names").addClass("d-none");
 
@@ -1133,6 +1141,9 @@
   // date clear inputs
   $("#dateFilterDropdown .dropdown-item-remove").click(function (e) {
     e.preventDefault();
+    
+    $('.date-filter').addClass('d-none')
+
     $(".date-filter .sub-filter-title").removeClass("d-none");
     $(".date-filter .sub-filter-names").addClass("d-none");
 
@@ -1143,6 +1154,9 @@
   // rating clear inputs
   $("#ratingFilterDropdown .dropdown-item-remove").click(function (e) {
     e.preventDefault();
+    
+    $('.rating-filter').addClass('d-none')
+
     $(".rating-filter .sub-filter-title").removeClass("d-none");
     $(".rating-filter .sub-filter-names").addClass("d-none");
 
